@@ -1,9 +1,24 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Guiapocketapp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores Principais -->
+    <color name="primary">#FF6B35</color>
+    <color name="primary_variant">#E55722</color>
+    <color name="secondary">#03DAC6</color>
 
-    <style name="Theme.Guiapocketapp" parent="Base.Theme.Guiapocketapp" />
+    <!-- Cores de Fundo -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Cores de Texto -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_background">#000000</color>
+    <color name="text_primary">#212121</color>
+
+    <!-- Cores dos Grupos Musculares -->
+    <color name="peito_color">#FF5722</color>
+    <color name="costas_color">#2196F3</color>
+    <color name="pernas_color">#4CAF50</color>
+    <color name="ombros_color">#FF9800</color>
+    <color name="bracos_color">#9C27B0</color>
+    <color name="abdomen_color">#607D8B</color>
 </resources>

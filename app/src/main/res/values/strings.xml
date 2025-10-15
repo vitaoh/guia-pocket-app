@@ -1,4 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">guia-pocket-app</string>
+    <string name="app_name">Pocket Workout Guide</string>
+    <string name="grupos_musculares">Muscle Groups</string>
+
+    <!-- Groups -->
+    <string name="peito">Chest</string>
+    <string name="costas">Back</string>
+    <string name="pernas">Legs</string>
+    <string name="ombros">Shoulders</string>
+    <string name="bracos">Arms</string>
+    <string name="abdomen">Abs</string>
+
+    <!-- Exercises -->
+    <string name="exercicios">Exercises</string>
+    <string name="detalhes_exercicio">Exercise Details</string>
+    <string name="series">sets</string>
+    <string name="repeticoes">reps</string>
+    <string name="descanso">Rest:</string>
+    <string name="segundos">seconds</string>
+
+    <!-- Timer -->
+    <string name="iniciar_timer">Start Timer</string>
+    <string name="parar_timer">Stop Timer</string>
+
+    <!-- Links -->
+    <string name="ver_video">Watch Video</string>
+    <string name="compartilhar">Share</string>
+    <string name="ligar_personal">Personal</string>
+    <string name="localizar_academia">Gym</string>
+
+    <!-- Buttons -->
+    <string name="voltar">Back</string>
 </resources>

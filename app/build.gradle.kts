@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.guia_pocket_app"
-        minSdk = 24
+        minSdk = 33
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -34,6 +34,14 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    bundle {
+        language {
+            enableSplit = true
+        }
     }
 }
 
