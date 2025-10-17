@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Cores Principais -->
-    <color name="primary">#FF8A65</color>
-    <color name="primary_variant">#FF7043</color>
-    <color name="secondary">#4DD0E1</color>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Guiapocketapp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
 
-    <!-- Cores de Fundo -->
-    <color name="background">#121212</color>
-    <color name="surface">#1E1E1E</color>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
 
-    <!-- Cores de Texto -->
-    <color name="on_primary">#000000</color>
-    <color name="on_background">#FFFFFF</color>
-    <color name="text_primary">#FFFFFF</color>
-
-    <!-- Cores dos Grupos Musculares (mais suaves) -->
-    <color name="peito_color">#FF7043</color>
-    <color name="costas_color">#42A5F5</color>
-    <color name="pernas_color">#66BB6A</color>
-    <color name="ombros_color">#FFA726</color>
-    <color name="bracos_color">#AB47BC</color>
-    <color name="abdomen_color">#78909C</color>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColor">@color/onBackground</item>
+    </style>
 </resources>
+
+
