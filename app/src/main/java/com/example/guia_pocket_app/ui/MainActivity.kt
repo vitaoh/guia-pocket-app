@@ -11,14 +11,14 @@ import com.example.guia_pocket_app.ui.adapter.MuscleAdapter
 class MainActivity : AppCompatActivity() {
 
     private val muscleList = listOf(
-        Muscle("Peito", R.drawable.ic_chest),
-        Muscle("Costas", R.drawable.ic_back),
-        Muscle("Pernas", R.drawable.ic_legs),
-        Muscle("Ombros", R.drawable.ic_shoulders),
-        Muscle("Braços", R.drawable.ic_arms),
-        Muscle("Abdômen", R.drawable.ic_abs),
-        Muscle("Panturrilha", R.drawable.ic_calves),
-        Muscle("Trapézio", R.drawable.ic_traps)
+        Muscle("Peito", R.drawable.chest),
+        Muscle("Costas", R.drawable.back),
+        Muscle("Pernas", R.drawable.legs),
+        Muscle("Ombros", R.drawable.shoulders),
+        Muscle("Braços", R.drawable.arms),
+        Muscle("Abdômen", R.drawable.abs),
+        Muscle("Panturrilha", R.drawable.calves),
+        Muscle("Trapézio", R.drawable.traps)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

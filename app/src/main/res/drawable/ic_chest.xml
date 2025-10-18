@@ -1,8 +1,0 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp" android:height="24dp"
-    android:viewportWidth="24" android:viewportHeight="24">
-    <!-- Exemplo genérico: usar um dumbbell / peso -->
-    <path
-        android:fillColor="?attr/colorOnBackground"
-        android:pathData="M3,12h2v2H3v-2zm16,0h2v2h-2v-2zm-8,-5h2v10h-2v-10zm-4,4h2v2h-2v-2zm8,0h2v2h-2v-2z" />
-</vector>
