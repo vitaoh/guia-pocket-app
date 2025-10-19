@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Guia Pocket</string>
+    <string name="language">IDIOMA</string>
+    <string name="theme">TEMA</string>
     <string name="muscle_list_title">Lista de Músculos</string>
     <string name="exercise_list_title">Exercícios para %1$s</string>
     <string name="no_exercises">Sem exercícios disponíveis</string>

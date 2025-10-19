@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Pocket Guide</string>
+    <string name="language">LANGUAGE</string>
+    <string name="theme">THEME</string>
     <string name="muscle_list_title">Muscle List</string>
     <string name="exercise_list_title">Exercises for %1$s</string>
     <string name="no_exercises">No exercises available</string>
