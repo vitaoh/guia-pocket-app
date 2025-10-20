@@ -4,7 +4,7 @@
     <string name="language">LANGUAGE</string>
     <string name="theme">THEME</string>
     <string name="muscle_list_title">Muscle List</string>
-    <string name="exercise_list_title">Exercises for ??</string>
+    <string name="exercise_list_title">Exercises for %1$s</string>
     <string name="no_exercises">No exercises available</string>
 
     <string name="muscle_chest">Chest</string>

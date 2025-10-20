@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         binding.muscleListView.setOnItemClickListener { _, _, position, _ ->
             val muscle = muscleList[position]
             val intent = Intent(this, ExerciseActivity::class.java)
-            // Passa a KEY ao invés do nome
             intent.putExtra("muscle_key", muscle.key)
             startActivity(intent)
         }

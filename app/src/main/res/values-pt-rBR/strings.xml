@@ -4,7 +4,7 @@
     <string name="language">IDIOMA</string>
     <string name="theme">TEMA</string>
     <string name="muscle_list_title">Lista de Músculos</string>
-    <string name="exercise_list_title">Exercícios para ??</string>
+    <string name="exercise_list_title">Exercícios para %1$s</string>
     <string name="no_exercises">Sem exercícios disponíveis</string>
 
     <string name="muscle_chest">Peito</string>
