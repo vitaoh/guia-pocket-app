@@ -6,4 +6,131 @@
     <string name="muscle_list_title">Lista de Músculos</string>
     <string name="exercise_list_title">Exercícios para %1$s</string>
     <string name="no_exercises">Sem exercícios disponíveis</string>
+
+    <!-- Nomes dos músculos -->
+    <string name="muscle_chest">Peito</string>
+    <string name="muscle_back">Costas</string>
+    <string name="muscle_legs">Pernas</string>
+    <string name="muscle_shoulders">Ombros</string>
+    <string name="muscle_arms">Braços</string>
+    <string name="muscle_abs">Abdômen</string>
+    <string name="muscle_calves">Panturrilha</string>
+    <string name="muscle_traps">Trapézio</string>
+
+    <!-- Exercícios - Peito -->
+    <string-array name="exercises_chest">
+        <item>Supino reto</item>
+        <item>Supino inclinado</item>
+        <item>Supino declinado</item>
+        <item>Crucifixo</item>
+        <item>Crucifixo inclinado</item>
+        <item>Crossover</item>
+        <item>Flexão de braço</item>
+        <item>Flexão diamante</item>
+        <item>Mergulho paralelas</item>
+        <item>Pullover</item>
+        <item>Supino com halteres</item>
+        <item>Peck deck</item>
+    </string-array>
+
+    <!-- Exercícios - Costas -->
+    <string-array name="exercises_back">
+        <item>Barra fixa</item>
+        <item>Barra fixa pegada supinada</item>
+        <item>Remada curvada</item>
+        <item>Remada cavalinho</item>
+        <item>Remada unilateral</item>
+        <item>Pulldown</item>
+        <item>Pullover</item>
+        <item>Remada baixa</item>
+        <item>Remada alta</item>
+        <item>Levantamento terra</item>
+        <item>Remada sentado</item>
+        <item>Barra fixa australiana</item>
+    </string-array>
+
+    <!-- Exercícios - Pernas -->
+    <string-array name="exercises_legs">
+        <item>Agachamento</item>
+        <item>Agachamento frontal</item>
+        <item>Leg press</item>
+        <item>Cadeira extensora</item>
+        <item>Mesa flexora</item>
+        <item>Avanço</item>
+        <item>Afundo</item>
+        <item>Agachamento búlgaro</item>
+        <item>Stiff</item>
+        <item>Levantamento terra romeno</item>
+        <item>Cadeira adutora</item>
+        <item>Cadeira abdutora</item>
+        <item>Agachamento sumô</item>
+        <item>Hack squat</item>
+    </string-array>
+
+    <!-- Exercícios - Ombros -->
+    <string-array name="exercises_shoulders">
+        <item>Desenvolvimento militar</item>
+        <item>Desenvolvimento com halteres</item>
+        <item>Elevação lateral</item>
+        <item>Elevação frontal</item>
+        <item>Remada alta</item>
+        <item>Encolhimento</item>
+        <item>Desenvolvimento Arnold</item>
+        <item>Face pull</item>
+        <item>Crucifixo inverso</item>
+        <item>Elevação posterior</item>
+        <item>Desenvolvimento sentado</item>
+    </string-array>
+
+    <!-- Exercícios - Braços -->
+    <string-array name="exercises_arms">
+        <item>Rosca direta</item>
+        <item>Rosca alternada</item>
+        <item>Rosca martelo</item>
+        <item>Rosca scott</item>
+        <item>Rosca concentrada</item>
+        <item>Tríceps pulley</item>
+        <item>Tríceps testa</item>
+        <item>Tríceps francês</item>
+        <item>Mergulho banco</item>
+        <item>Rosca inversa</item>
+        <item>Tríceps coice</item>
+        <item>Supino fechado</item>
+    </string-array>
+
+    <!-- Exercícios - Abdômen -->
+    <string-array name="exercises_abs">
+        <item>Prancha</item>
+        <item>Abdominal</item>
+        <item>Abdominal crunch</item>
+        <item>Elevação de pernas</item>
+        <item>Prancha lateral</item>
+        <item>Bicicleta</item>
+        <item>Abdominal oblíquo</item>
+        <item>Mountain climbers</item>
+        <item>Russian twist</item>
+        <item>V-ups</item>
+        <item>Abdominal canivete</item>
+        <item>Prancha com toque no ombro</item>
+    </string-array>
+
+    <!-- Exercícios - Panturrilha -->
+    <string-array name="exercises_calves">
+        <item>Gêmeos em pé</item>
+        <item>Gêmeos sentado</item>
+        <item>Elevação de panturrilha no leg press</item>
+        <item>Panturrilha burro</item>
+        <item>Elevação de panturrilha unilateral</item>
+        <item>Gêmeos no smith</item>
+    </string-array>
+
+    <!-- Exercícios - Trapézio -->
+    <string-array name="exercises_traps">
+        <item>Encolhimento com barra</item>
+        <item>Encolhimento com halteres</item>
+        <item>Remada alta</item>
+        <item>Face pull</item>
+        <item>Encolhimento unilateral</item>
+        <item>Farmer\'s walk</item>
+    </string-array>
 </resources>

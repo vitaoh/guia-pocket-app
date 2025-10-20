@@ -7,7 +7,130 @@
     <string name="exercise_list_title">Exercises for %1$s</string>
     <string name="no_exercises">No exercises available</string>
 
+    <!-- Muscle names -->
+    <string name="muscle_chest">Chest</string>
+    <string name="muscle_back">Back</string>
+    <string name="muscle_legs">Legs</string>
+    <string name="muscle_shoulders">Shoulders</string>
+    <string name="muscle_arms">Arms</string>
+    <string name="muscle_abs">Abs</string>
+    <string name="muscle_calves">Calves</string>
+    <string name="muscle_traps">Traps</string>
 
+    <!-- Exercises - Chest -->
+    <string-array name="exercises_chest">
+        <item>Flat bench press</item>
+        <item>Incline bench press</item>
+        <item>Decline bench press</item>
+        <item>Dumbbell fly</item>
+        <item>Incline dumbbell fly</item>
+        <item>Cable crossover</item>
+        <item>Push-up</item>
+        <item>Diamond push-up</item>
+        <item>Chest dip</item>
+        <item>Dumbbell pullover</item>
+        <item>Dumbbell bench press</item>
+        <item>Pec deck</item>
+    </string-array>
+
+    <!-- Exercises - Back -->
+    <string-array name="exercises_back">
+        <item>Pull-up</item>
+        <item>Chin-up</item>
+        <item>Bent-over row</item>
+        <item>T-bar row</item>
+        <item>One-arm dumbbell row</item>
+        <item>Lat pulldown</item>
+        <item>Pullover</item>
+        <item>Cable row</item>
+        <item>Upright row</item>
+        <item>Deadlift</item>
+        <item>Seated row</item>
+        <item>Inverted row</item>
+    </string-array>
+
+    <!-- Exercises - Legs -->
+    <string-array name="exercises_legs">
+        <item>Squat</item>
+        <item>Front squat</item>
+        <item>Leg press</item>
+        <item>Leg extension</item>
+        <item>Leg curl</item>
+        <item>Lunge</item>
+        <item>Walking lunge</item>
+        <item>Bulgarian split squat</item>
+        <item>Stiff-leg deadlift</item>
+        <item>Romanian deadlift</item>
+        <item>Hip adduction</item>
+        <item>Hip abduction</item>
+        <item>Sumo squat</item>
+        <item>Hack squat</item>
+    </string-array>
+
+    <!-- Exercises - Shoulders -->
+    <string-array name="exercises_shoulders">
+        <item>Military press</item>
+        <item>Dumbbell shoulder press</item>
+        <item>Lateral raise</item>
+        <item>Front raise</item>
+        <item>Upright row</item>
+        <item>Barbell shrug</item>
+        <item>Arnold press</item>
+        <item>Face pull</item>
+        <item>Reverse fly</item>
+        <item>Rear delt fly</item>
+        <item>Seated shoulder press</item>
+    </string-array>
+
+    <!-- Exercises - Arms -->
+    <string-array name="exercises_arms">
+        <item>Barbell curl</item>
+        <item>Alternating dumbbell curl</item>
+        <item>Hammer curl</item>
+        <item>Preacher curl</item>
+        <item>Concentration curl</item>
+        <item>Triceps pushdown</item>
+        <item>Skull crusher</item>
+        <item>Overhead triceps extension</item>
+        <item>Bench dip</item>
+        <item>Reverse curl</item>
+        <item>Triceps kickback</item>
+        <item>Close-grip bench press</item>
+    </string-array>
+
+    <!-- Exercises - Abs -->
+    <string-array name="exercises_abs">
+        <item>Plank</item>
+        <item>Crunch</item>
+        <item>Abdominal crunch</item>
+        <item>Leg raise</item>
+        <item>Side plank</item>
+        <item>Bicycle crunch</item>
+        <item>Oblique crunch</item>
+        <item>Mountain climbers</item>
+        <item>Russian twist</item>
+        <item>V-ups</item>
+        <item>Jackknife sit-up</item>
+        <item>Plank shoulder tap</item>
+    </string-array>
+
+    <!-- Exercises - Calves -->
+    <string-array name="exercises_calves">
+        <item>Standing calf raise</item>
+        <item>Seated calf raise</item>
+        <item>Leg press calf raise</item>
+        <item>Donkey calf raise</item>
+        <item>Single-leg calf raise</item>
+        <item>Smith machine calf raise</item>
+    </string-array>
+
+    <!-- Exercises - Traps -->
+    <string-array name="exercises_traps">
+        <item>Barbell shrug</item>
+        <item>Dumbbell shrug</item>
+        <item>Upright row</item>
+        <item>Face pull</item>
+        <item>Single-arm shrug</item>
+        <item>Farmer\'s walk</item>
+    </string-array>
 </resources>
-
-

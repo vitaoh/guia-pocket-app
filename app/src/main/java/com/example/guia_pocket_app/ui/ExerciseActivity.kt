@@ -11,17 +11,6 @@ import com.google.android.material.appbar.MaterialToolbar
 
 class ExerciseActivity : AppCompatActivity() {
 
-    private val exercisesMap = mapOf(
-        "Peito" to listOf("Supino reto", "Supino inclinado", "Crucifixo"),
-        "Costas" to listOf("Barra fixa", "Remada", "Pulldown"),
-        "Pernas" to listOf("Agachamento", "Leg press", "Cadeira extensora"),
-        "Ombros" to listOf("Desenvolvimento", "Elevação lateral", "Encolhimento"),
-        "Braços" to listOf("Rosca direta", "Tríceps pulley", "Martelo"),
-        "Abdômen" to listOf("Prancha", "Abdominal", "Elevação de pernas"),
-        "Panturrilha" to listOf("Gêmeos em pé", "Gêmeos sentado"),
-        "Trapézio" to listOf("Encolhimento com barra", "Remada alta")
-    )
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, true)
@@ -32,15 +21,49 @@ class ExerciseActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = ""
 
-        val muscle = intent.getStringExtra("muscle_name") ?: "Músculo"
+        // Recebe a KEY do músculo
+        val muscleKey = intent.getStringExtra("muscle_key") ?: "chest"
         val titleView = findViewById<TextView>(R.id.muscleTitle)
         val listView = findViewById<ListView>(R.id.exerciseListView)
 
-        titleView.text = getString(R.string.exercise_list_title, muscle)
+        // Busca o nome localizado do músculo
+        val muscleName = getMuscleNameByKey(muscleKey)
+        titleView.text = getString(R.string.exercise_list_title, muscleName)
 
-        val exercises = exercisesMap[muscle] ?: listOf(getString(R.string.no_exercises))
+        // Busca os exercícios do array de recursos
+        val exercises = getExercisesByKey(muscleKey)
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, exercises)
         listView.adapter = adapter
+    }
+
+    private fun getMuscleNameByKey(key: String): String {
+        return when (key) {
+            "chest" -> getString(R.string.muscle_chest)
+            "back" -> getString(R.string.muscle_back)
+            "legs" -> getString(R.string.muscle_legs)
+            "shoulders" -> getString(R.string.muscle_shoulders)
+            "arms" -> getString(R.string.muscle_arms)
+            "abs" -> getString(R.string.muscle_abs)
+            "calves" -> getString(R.string.muscle_calves)
+            "traps" -> getString(R.string.muscle_traps)
+            else -> getString(R.string.muscle_chest)
+        }
+    }
+
+    private fun getExercisesByKey(key: String): Array<String> {
+        val arrayResId = when (key) {
+            "chest" -> R.array.exercises_chest
+            "back" -> R.array.exercises_back
+            "legs" -> R.array.exercises_legs
+            "shoulders" -> R.array.exercises_shoulders
+            "arms" -> R.array.exercises_arms
+            "abs" -> R.array.exercises_abs
+            "calves" -> R.array.exercises_calves
+            "traps" -> R.array.exercises_traps
+            else -> R.array.exercises_chest
+        }
+
+        return resources.getStringArray(arrayResId)
     }
 
     override fun onSupportNavigateUp(): Boolean {

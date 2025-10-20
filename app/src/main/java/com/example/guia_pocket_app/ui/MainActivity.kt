@@ -15,16 +15,19 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    private val muscleList = listOf(
-        Muscle("Peito", R.drawable.chest),
-        Muscle("Costas", R.drawable.back),
-        Muscle("Pernas", R.drawable.legs),
-        Muscle("Ombros", R.drawable.shoulders),
-        Muscle("Braços", R.drawable.arms),
-        Muscle("Abdômen", R.drawable.abs),
-        Muscle("Panturrilha", R.drawable.calves),
-        Muscle("Trapézio", R.drawable.traps)
-    )
+    // Usa lazy para buscar strings após onCreate
+    private val muscleList by lazy {
+        listOf(
+            Muscle(getString(R.string.muscle_chest), R.drawable.chest, "chest"),
+            Muscle(getString(R.string.muscle_back), R.drawable.back, "back"),
+            Muscle(getString(R.string.muscle_legs), R.drawable.legs, "legs"),
+            Muscle(getString(R.string.muscle_shoulders), R.drawable.shoulders, "shoulders"),
+            Muscle(getString(R.string.muscle_arms), R.drawable.arms, "arms"),
+            Muscle(getString(R.string.muscle_abs), R.drawable.abs, "abs"),
+            Muscle(getString(R.string.muscle_calves), R.drawable.calves, "calves"),
+            Muscle(getString(R.string.muscle_traps), R.drawable.traps, "traps")
+        )
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,9 +42,10 @@ class MainActivity : AppCompatActivity() {
         binding.muscleListView.adapter = adapter
 
         binding.muscleListView.setOnItemClickListener { _, _, position, _ ->
-            val muscleName = muscleList[position].name
+            val muscle = muscleList[position]
             val intent = Intent(this, ExerciseActivity::class.java)
-            intent.putExtra("muscle_name", muscleName)
+            // Passa a KEY ao invés do nome
+            intent.putExtra("muscle_key", muscle.key)
             startActivity(intent)
         }
 
