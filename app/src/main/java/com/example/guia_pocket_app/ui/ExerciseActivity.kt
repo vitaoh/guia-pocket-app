@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import com.example.guia_pocket_app.R
 
 class ExerciseActivity : AppCompatActivity() {

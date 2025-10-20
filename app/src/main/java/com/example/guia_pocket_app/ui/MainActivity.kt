@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
+import androidx.core.view.WindowCompat
 import com.example.guia_pocket_app.R
 import com.example.guia_pocket_app.databinding.ActivityMainBinding
 import com.example.guia_pocket_app.model.Muscle
@@ -31,11 +32,9 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
         WindowCompat.setDecorFitsSystemWindows(window, true)
 
-        // INFLOAR corretamente o layout com View Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configurar ListView com adapter
         val adapter = MuscleAdapter(this, muscleList)
         binding.muscleListView.adapter = adapter
 
@@ -46,7 +45,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Alternar Tema Claro/Escuro
         binding.btnToggleTheme.setOnClickListener {
             val isNight = AppCompatDelegate.getDefaultNightMode() ==
                     AppCompatDelegate.MODE_NIGHT_YES
@@ -58,7 +56,6 @@ class MainActivity : AppCompatActivity() {
             AppCompatDelegate.setDefaultNightMode(mode)
         }
 
-        // Alternar Idioma (Português ↔ Inglês)
         binding.btnChangeLanguage.setOnClickListener {
             val atual = AppCompatDelegate.getApplicationLocales()
             val isEnglish = !atual.isEmpty && atual[0]?.language == "en"
