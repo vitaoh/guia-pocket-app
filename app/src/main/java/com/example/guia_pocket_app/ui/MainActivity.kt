@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    // Usa lazy para buscar strings após onCreate
     private val muscleList by lazy {
         listOf(
             Muscle(getString(R.string.muscle_chest), R.drawable.chest, "chest"),

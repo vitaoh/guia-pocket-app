@@ -21,16 +21,13 @@ class ExerciseActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = ""
 
-        // Recebe a KEY do músculo
         val muscleKey = intent.getStringExtra("muscle_key") ?: "chest"
         val titleView = findViewById<TextView>(R.id.muscleTitle)
         val listView = findViewById<ListView>(R.id.exerciseListView)
 
-        // Busca o nome localizado do músculo
         val muscleName = getMuscleNameByKey(muscleKey)
         titleView.text = getString(R.string.exercise_list_title, muscleName)
 
-        // Busca os exercícios do array de recursos
         val exercises = getExercisesByKey(muscleKey)
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, exercises)
         listView.adapter = adapter

@@ -7,7 +7,6 @@
     <string name="exercise_list_title">Exercícios para %1$s</string>
     <string name="no_exercises">Sem exercícios disponíveis</string>
 
-    <!-- Nomes dos músculos -->
     <string name="muscle_chest">Peito</string>
     <string name="muscle_back">Costas</string>
     <string name="muscle_legs">Pernas</string>
@@ -17,7 +16,6 @@
     <string name="muscle_calves">Panturrilha</string>
     <string name="muscle_traps">Trapézio</string>
 
-    <!-- Exercícios - Peito -->
     <string-array name="exercises_chest">
         <item>Supino reto</item>
         <item>Supino inclinado</item>
@@ -33,7 +31,6 @@
         <item>Peck deck</item>
     </string-array>
 
-    <!-- Exercícios - Costas -->
     <string-array name="exercises_back">
         <item>Barra fixa</item>
         <item>Barra fixa pegada supinada</item>
@@ -49,7 +46,6 @@
         <item>Barra fixa australiana</item>
     </string-array>
 
-    <!-- Exercícios - Pernas -->
     <string-array name="exercises_legs">
         <item>Agachamento</item>
         <item>Agachamento frontal</item>
@@ -67,7 +63,6 @@
         <item>Hack squat</item>
     </string-array>
 
-    <!-- Exercícios - Ombros -->
     <string-array name="exercises_shoulders">
         <item>Desenvolvimento militar</item>
         <item>Desenvolvimento com halteres</item>
@@ -82,7 +77,6 @@
         <item>Desenvolvimento sentado</item>
     </string-array>
 
-    <!-- Exercícios - Braços -->
     <string-array name="exercises_arms">
         <item>Rosca direta</item>
         <item>Rosca alternada</item>
@@ -98,7 +92,6 @@
         <item>Supino fechado</item>
     </string-array>
 
-    <!-- Exercícios - Abdômen -->
     <string-array name="exercises_abs">
         <item>Prancha</item>
         <item>Abdominal</item>
@@ -114,7 +107,6 @@
         <item>Prancha com toque no ombro</item>
     </string-array>
 
-    <!-- Exercícios - Panturrilha -->
     <string-array name="exercises_calves">
         <item>Gêmeos em pé</item>
         <item>Gêmeos sentado</item>
@@ -124,7 +116,6 @@
         <item>Gêmeos no smith</item>
     </string-array>
 
-    <!-- Exercícios - Trapézio -->
     <string-array name="exercises_traps">
         <item>Encolhimento com barra</item>
         <item>Encolhimento com halteres</item>

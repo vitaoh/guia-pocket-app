@@ -7,7 +7,6 @@
     <string name="exercise_list_title">Exercises for %1$s</string>
     <string name="no_exercises">No exercises available</string>
 
-    <!-- Muscle names -->
     <string name="muscle_chest">Chest</string>
     <string name="muscle_back">Back</string>
     <string name="muscle_legs">Legs</string>
@@ -17,7 +16,6 @@
     <string name="muscle_calves">Calves</string>
     <string name="muscle_traps">Traps</string>
 
-    <!-- Exercises - Chest -->
     <string-array name="exercises_chest">
         <item>Flat bench press</item>
         <item>Incline bench press</item>
@@ -33,7 +31,6 @@
         <item>Pec deck</item>
     </string-array>
 
-    <!-- Exercises - Back -->
     <string-array name="exercises_back">
         <item>Pull-up</item>
         <item>Chin-up</item>
@@ -49,7 +46,6 @@
         <item>Inverted row</item>
     </string-array>
 
-    <!-- Exercises - Legs -->
     <string-array name="exercises_legs">
         <item>Squat</item>
         <item>Front squat</item>
@@ -67,7 +63,6 @@
         <item>Hack squat</item>
     </string-array>
 
-    <!-- Exercises - Shoulders -->
     <string-array name="exercises_shoulders">
         <item>Military press</item>
         <item>Dumbbell shoulder press</item>
@@ -82,7 +77,6 @@
         <item>Seated shoulder press</item>
     </string-array>
 
-    <!-- Exercises - Arms -->
     <string-array name="exercises_arms">
         <item>Barbell curl</item>
         <item>Alternating dumbbell curl</item>
@@ -98,7 +92,6 @@
         <item>Close-grip bench press</item>
     </string-array>
 
-    <!-- Exercises - Abs -->
     <string-array name="exercises_abs">
         <item>Plank</item>
         <item>Crunch</item>
@@ -114,7 +107,6 @@
         <item>Plank shoulder tap</item>
     </string-array>
 
-    <!-- Exercises - Calves -->
     <string-array name="exercises_calves">
         <item>Standing calf raise</item>
         <item>Seated calf raise</item>
@@ -124,7 +116,6 @@
         <item>Smith machine calf raise</item>
     </string-array>
 
-    <!-- Exercises - Traps -->
     <string-array name="exercises_traps">
         <item>Barbell shrug</item>
         <item>Dumbbell shrug</item>
