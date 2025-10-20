@@ -4,7 +4,7 @@
     <string name="language">LANGUAGE</string>
     <string name="theme">THEME</string>
     <string name="muscle_list_title">Muscle List</string>
-    <string name="exercise_list_title">Exercises for %1$s</string>
+    <string name="exercise_list_title">Exercises for ??</string>
     <string name="no_exercises">No exercises available</string>
 
     <string name="muscle_chest">Chest</string>
@@ -24,7 +24,6 @@
         <item>Incline dumbbell fly</item>
         <item>Cable crossover</item>
         <item>Push-up</item>
-        <item>Diamond push-up</item>
         <item>Chest dip</item>
         <item>Dumbbell pullover</item>
         <item>Dumbbell bench press</item>
@@ -38,7 +37,6 @@
         <item>T-bar row</item>
         <item>One-arm dumbbell row</item>
         <item>Lat pulldown</item>
-        <item>Pullover</item>
         <item>Cable row</item>
         <item>Upright row</item>
         <item>Deadlift</item>
@@ -53,7 +51,6 @@
         <item>Leg extension</item>
         <item>Leg curl</item>
         <item>Lunge</item>
-        <item>Walking lunge</item>
         <item>Bulgarian split squat</item>
         <item>Stiff-leg deadlift</item>
         <item>Romanian deadlift</item>
@@ -69,7 +66,6 @@
         <item>Lateral raise</item>
         <item>Front raise</item>
         <item>Upright row</item>
-        <item>Barbell shrug</item>
         <item>Arnold press</item>
         <item>Face pull</item>
         <item>Reverse fly</item>
@@ -95,16 +91,12 @@
     <string-array name="exercises_abs">
         <item>Plank</item>
         <item>Crunch</item>
-        <item>Abdominal crunch</item>
         <item>Leg raise</item>
         <item>Side plank</item>
-        <item>Bicycle crunch</item>
-        <item>Oblique crunch</item>
         <item>Mountain climbers</item>
         <item>Russian twist</item>
         <item>V-ups</item>
         <item>Jackknife sit-up</item>
-        <item>Plank shoulder tap</item>
     </string-array>
 
     <string-array name="exercises_calves">
@@ -122,6 +114,5 @@
         <item>Upright row</item>
         <item>Face pull</item>
         <item>Single-arm shrug</item>
-        <item>Farmer\'s walk</item>
     </string-array>
 </resources>
