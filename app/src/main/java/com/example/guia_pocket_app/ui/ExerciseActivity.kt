@@ -21,6 +21,10 @@ class ExerciseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        supportActionBar?.hide()
+        WindowCompat.setDecorFitsSystemWindows(window, true)
+        
         setContentView(R.layout.activity_exercise)
 
         val titleView = findViewById<TextView>(R.id.muscleTitle)

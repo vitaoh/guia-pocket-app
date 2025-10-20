@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        supportActionBar?.hide()
+        WindowCompat.setDecorFitsSystemWindows(window, true)
+
         // INFLOAR corretamente o layout com View Binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
