@@ -24,7 +24,6 @@
         android:layout_height="wrap_content"
         android:text="Nome do Músculo"
         android:textSize="18sp"
-        android:textStyle="medium"
         android:textColor="?attr/colorOnBackground"
         android:maxLines="1"
         android:ellipsize="end"
