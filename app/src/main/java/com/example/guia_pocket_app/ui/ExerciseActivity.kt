@@ -1,11 +1,13 @@
 package com.example.guia_pocket_app.ui
 
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import com.example.guia_pocket_app.R
+import com.google.android.material.appbar.MaterialToolbar
 
 class ExerciseActivity : AppCompatActivity() {
 
@@ -22,20 +24,27 @@ class ExerciseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        supportActionBar?.hide()
         WindowCompat.setDecorFitsSystemWindows(window, true)
-        
         setContentView(R.layout.activity_exercise)
 
+        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = ""
+
+        val muscle = intent.getStringExtra("muscle_name") ?: "Músculo"
         val titleView = findViewById<TextView>(R.id.muscleTitle)
         val listView = findViewById<ListView>(R.id.exerciseListView)
 
-        val muscle = intent.getStringExtra("muscle_name") ?: ""
         titleView.text = getString(R.string.exercise_list_title, muscle)
 
         val exercises = exercisesMap[muscle] ?: listOf(getString(R.string.no_exercises))
-        val adapter = android.widget.ArrayAdapter(this, android.R.layout.simple_list_item_1, exercises)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, exercises)
         listView.adapter = adapter
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressedDispatcher.onBackPressed()
+        return true
     }
 }
