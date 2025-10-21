@@ -33,7 +33,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Nome do Exercício -->
             <TextView
                 android:id="@+id/exerciseName"
                 android:layout_width="match_parent"
@@ -44,8 +43,7 @@
                 android:layout_marginBottom="16dp"
                 android:textAlignment="center"/>
 
-            <!-- Descrição -->
-            <com.google.android.material.card.MaterialCardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -75,10 +73,9 @@
                         android:textColor="?attr/colorOnBackground"
                         android:lineSpacingExtra="4dp"/>
                 </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
 
-            <!-- Músculos Trabalhados -->
-            <com.google.android.material.card.MaterialCardView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -107,22 +104,19 @@
                         android:textSize="16sp"
                         android:textColor="?attr/colorOnBackground"/>
                 </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
 
-            <!-- Dificuldade e Equipamento lado a lado -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="16dp">
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
+                    android:layout_marginEnd="8dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -147,9 +141,9 @@
                             android:textSize="16sp"
                             android:textColor="?attr/colorOnBackground"/>
                     </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -181,7 +175,7 @@
                             android:textColor="?attr/colorOnBackground"
                             android:textAlignment="center"/>
                     </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
@@ -191,7 +185,6 @@
                 android:text="Ver Tutorial no YouTube"
                 android:textSize="16sp"
                 android:padding="16dp"
-                app:icon="@android:drawable/ic_media_play"
                 app:iconGravity="start"
                 android:layout_marginTop="8dp"/>
 
