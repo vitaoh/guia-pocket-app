@@ -185,7 +185,6 @@
                 android:text="Ver Tutorial no YouTube"
                 android:textSize="16sp"
                 android:padding="16dp"
-                app:iconGravity="start"
                 android:layout_marginTop="8dp"/>
 
         </LinearLayout>
