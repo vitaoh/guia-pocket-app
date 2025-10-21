@@ -23,6 +23,11 @@
 
         <activity android:name=".ui.ExerciseActivity" />
 
+        <activity
+            android:name=".ui.ExerciseDetailActivity"
+            android:parentActivityName=".ui.ExerciseActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

@@ -16,103 +16,182 @@
     <string name="muscle_calves">Panturrilha</string>
     <string name="muscle_traps">Trapézio</string>
 
-    <string-array name="exercises_chest">
-        <item>Supino reto</item>
-        <item>Supino inclinado</item>
-        <item>Supino declinado</item>
-        <item>Crucifixo</item>
-        <item>Crucifixo inclinado</item>
-        <item>Crossover</item>
-        <item>Flexão de braço</item>
-        <item>Mergulho paralelas</item>
-        <item>Pullover</item>
-        <item>Supino com halteres</item>
-        <item>Peck deck</item>
-    </string-array>
+    <string name="exercise_chest_1">Supino reto</string>
+    <string name="exercise_chest_2">Supino inclinado</string>
+    <string name="exercise_chest_3">Supino declinado</string>
+    <string name="exercise_chest_4">Crucifixo</string>
+    <string name="exercise_chest_5">Crucifixo inclinado</string>
+    <string name="exercise_chest_6">Crossover</string>
+    <string name="exercise_chest_7">Flexão de braço</string>
+    <string name="exercise_chest_8">Mergulho paralelas</string>
+    <string name="exercise_chest_9">Pullover</string>
+    <string name="exercise_chest_10">Supino com halteres</string>
+    <string name="exercise_chest_11">Peck deck</string>
 
-    <string-array name="exercises_back">
-        <item>Barra fixa</item>
-        <item>Barra fixa pegada supinada</item>
-        <item>Remada curvada</item>
-        <item>Remada cavalinho</item>
-        <item>Remada unilateral</item>
-        <item>Pulldown</item>
-        <item>Remada baixa</item>
-        <item>Remada alta</item>
-        <item>Levantamento terra</item>
-        <item>Remada sentado</item>
-        <item>Barra fixa australiana</item>
-    </string-array>
+    <string name="exercise_chest_1_desc">Exercício composto clássico para peito, ombros e tríceps. Realizado deitado em banco reto pressionando a barra.</string>
+    <string name="exercise_chest_2_desc">Foca no peitoral superior com ênfase na porção clavicular. Executado em banco inclinado de 30-45 graus.</string>
+    <string name="exercise_chest_3_desc">Concentra no desenvolvimento do peitoral inferior. Realizado em banco declinado focando na porção esternal.</string>
+    <string name="exercise_chest_4_desc">Exercício de isolamento alongando e contraindo o peito. Usa halteres em movimento de arco para máxima ativação peitoral.</string>
+    <string name="exercise_chest_5_desc">Isolamento do peitoral superior em banco inclinado. Enfatiza alongamento e contração dos peitorais superiores.</string>
+    <string name="exercise_chest_6_desc">Exercício no cabo para isolamento do peito. Proporciona tensão constante durante todo o movimento.</string>
+    <string name="exercise_chest_7_desc">Exercício composto com peso corporal trabalhando peito, ombros e tríceps. Pode ser modificado com variações.</string>
+    <string name="exercise_chest_8_desc">Exercício avançado com peso corporal enfatizando peitoral inferior e tríceps. Requer barras paralelas.</string>
+    <string name="exercise_chest_9_desc">Movimento híbrido trabalhando peito e dorsais. Executado com halter atravessando o banco, alongando peito.</string>
+    <string name="exercise_chest_10_desc">Variação do supino com halteres permitindo maior amplitude. Requer mais estabilização que a versão com barra.</string>
+    <string name="exercise_chest_11_desc">Exercício de isolamento na máquina. Proporciona movimento controlado para contração peitoral.</string>
 
-    <string-array name="exercises_legs">
-        <item>Agachamento</item>
-        <item>Agachamento frontal</item>
-        <item>Leg press</item>
-        <item>Cadeira extensora</item>
-        <item>Mesa flexora</item>
-        <item>Afundo</item>
-        <item>Agachamento búlgaro</item>
-        <item>Stiff</item>
-        <item>Levantamento terra romeno</item>
-        <item>Cadeira adutora</item>
-        <item>Cadeira abdutora</item>
-        <item>Agachamento sumô</item>
-        <item>Hack squat</item>
-    </string-array>
+    <string name="exercise_back_1">Barra fixa</string>
+    <string name="exercise_back_2">Barra fixa pegada supinada</string>
+    <string name="exercise_back_3">Remada curvada</string>
+    <string name="exercise_back_4">Remada cavalinho</string>
+    <string name="exercise_back_5">Remada unilateral</string>
+    <string name="exercise_back_6">Pulldown</string>
+    <string name="exercise_back_7">Remada baixa</string>
+    <string name="exercise_back_8">Remada alta</string>
+    <string name="exercise_back_9">Levantamento terra</string>
+    <string name="exercise_back_10">Remada sentado</string>
+    <string name="exercise_back_11">Barra fixa australiana</string>
 
-    <string-array name="exercises_shoulders">
-        <item>Desenvolvimento militar</item>
-        <item>Desenvolvimento com halteres</item>
-        <item>Elevação lateral</item>
-        <item>Elevação frontal</item>
-        <item>Remada alta</item>
-        <item>Desenvolvimento Arnold</item>
-        <item>Face pull</item>
-        <item>Crucifixo inverso</item>
-        <item>Elevação posterior</item>
-        <item>Desenvolvimento sentado</item>
-    </string-array>
+    <string name="exercise_back_1_desc">Exercício composto com peso corporal para dorsais, bíceps e deltoides posteriores. Realizado com pegada pronada.</string>
+    <string name="exercise_back_2_desc">Variação da barra fixa com pegada supinada. Coloca mais ênfase nos bíceps enquanto trabalha as costas.</string>
+    <string name="exercise_back_3_desc">Movimento fundamental de remada para espessura das costas. Executado curvado puxando barra até o peito inferior.</string>
+    <string name="exercise_back_4_desc">Variação de remada usando T-bar ou landmine. Foca no meio das costas com torso apoiado.</string>
+    <string name="exercise_back_5_desc">Exercício de remada unilateral permitindo amplitude completa. Executado com uma mão apoiada no banco.</string>
+    <string name="exercise_back_6_desc">Alternativa na máquina para barra fixa. Permite controle da resistência focando dorsais e parte superior das costas.</string>
+    <string name="exercise_back_7_desc">Remada sentada no cabo para desenvolvimento das costas. Proporciona tensão constante durante o puxão.</string>
+    <string name="exercise_back_8_desc">Remada em pé puxando peso até o queixo. Trabalha parte superior das costas, trapézio e ombros.</string>
+    <string name="exercise_back_9_desc">Rei dos exercícios compostos trabalhando toda cadeia posterior. Constrói costas, glúteos e posteriores com carga pesada.</string>
+    <string name="exercise_back_10_desc">Remada horizontal na máquina. Foca meio das costas com posição sentada estável.</string>
+    <string name="exercise_back_11_desc">Exercício de remada com peso corporal sob barra ou mesa. Dificuldade ajustável mudando ângulo do corpo.</string>
 
-    <string-array name="exercises_arms">
-        <item>Rosca direta</item>
-        <item>Rosca alternada</item>
-        <item>Rosca martelo</item>
-        <item>Rosca scott</item>
-        <item>Rosca concentrada</item>
-        <item>Tríceps pulley</item>
-        <item>Tríceps testa</item>
-        <item>Tríceps francês</item>
-        <item>Mergulho banco</item>
-        <item>Rosca inversa</item>
-        <item>Tríceps coice</item>
-        <item>Supino fechado</item>
-    </string-array>
+    <string name="exercise_legs_1">Agachamento</string>
+    <string name="exercise_legs_2">Agachamento frontal</string>
+    <string name="exercise_legs_3">Leg press</string>
+    <string name="exercise_legs_4">Cadeira extensora</string>
+    <string name="exercise_legs_5">Mesa flexora</string>
+    <string name="exercise_legs_6">Afundo</string>
+    <string name="exercise_legs_7">Agachamento búlgaro</string>
+    <string name="exercise_legs_8">Stiff</string>
+    <string name="exercise_legs_9">Levantamento terra romeno</string>
+    <string name="exercise_legs_10">Cadeira adutora</string>
+    <string name="exercise_legs_11">Cadeira abdutora</string>
+    <string name="exercise_legs_12">Agachamento sumô</string>
+    <string name="exercise_legs_13">Hack squat</string>
 
-    <string-array name="exercises_abs">
-        <item>Prancha</item>
-        <item>Abdominal</item>
-        <item>Elevação de pernas</item>
-        <item>Prancha lateral</item>
-        <item>Mountain climbers</item>
-        <item>Russian twist</item>
-        <item>V-ups</item>
-        <item>Abdominal canivete</item>
-    </string-array>
+    <string name="exercise_legs_1_desc">O rei dos exercícios de pernas. Movimento composto construindo quadríceps, glúteos e posteriores com barra nas costas.</string>
+    <string name="exercise_legs_2_desc">Variação do agachamento com barra na frente dos ombros. Enfatiza quadríceps e requer torso ereto.</string>
+    <string name="exercise_legs_3_desc">Exercício de perna na máquina permitindo carga pesada. Trabalha quadríceps e glúteos com apoio nas costas.</string>
+    <string name="exercise_legs_4_desc">Exercício de isolamento para quadríceps. Executado sentado estendendo as pernas contra resistência.</string>
+    <string name="exercise_legs_5_desc">Isolamento para posteriores. Executado deitado ou sentado flexionando pernas contra almofada.</string>
+    <string name="exercise_legs_6_desc">Exercício unilateral de perna dando passo à frente. Trabalha quadríceps, glúteos e melhora equilíbrio.</string>
+    <string name="exercise_legs_7_desc">Agachamento unilateral com pé traseiro elevado. Treino intenso de quadríceps e glúteos requerendo equilíbrio.</string>
+    <string name="exercise_legs_8_desc">Movimento de articulação do quadril focando posteriores e glúteos. Executado com pernas retas mantendo leve flexão.</string>
+    <string name="exercise_legs_9_desc">Variação do levantamento terra focando posteriores e glúteos. Mantém leve flexão dos joelhos com ênfase no quadril.</string>
+    <string name="exercise_legs_10_desc">Exercício na máquina juntando as pernas. Trabalha músculos adutores da parte interna da coxa.</string>
+    <string name="exercise_legs_11_desc">Exercício na máquina afastando as pernas. Trabalha quadril externo e músculos do glúteo.</string>
+    <string name="exercise_legs_12_desc">Agachamento com postura ampla focando parte interna das coxas e glúteos. Executado com dedos apontados para fora.</string>
+    <string name="exercise_legs_13_desc">Agachamento na máquina com plataforma angulada. Reduz estresse lombar focando efetivamente quadríceps.</string>
 
-    <string-array name="exercises_calves">
-        <item>Gêmeos em pé</item>
-        <item>Gêmeos sentado</item>
-        <item>Elevação de panturrilha no leg press</item>
-        <item>Panturrilha burro</item>
-        <item>Elevação de panturrilha unilateral</item>
-        <item>Gêmeos no smith</item>
-    </string-array>
+    <string name="exercise_shoulders_1">Desenvolvimento militar</string>
+    <string name="exercise_shoulders_2">Desenvolvimento com halteres</string>
+    <string name="exercise_shoulders_3">Elevação lateral</string>
+    <string name="exercise_shoulders_4">Elevação frontal</string>
+    <string name="exercise_shoulders_5">Remada alta</string>
+    <string name="exercise_shoulders_6">Desenvolvimento Arnold</string>
+    <string name="exercise_shoulders_7">Face pull</string>
+    <string name="exercise_shoulders_8">Crucifixo inverso</string>
+    <string name="exercise_shoulders_9">Elevação posterior</string>
+    <string name="exercise_shoulders_10">Desenvolvimento sentado</string>
 
-    <string-array name="exercises_traps">
-        <item>Encolhimento com barra</item>
-        <item>Encolhimento com halteres</item>
-        <item>Remada alta</item>
-        <item>Face pull</item>
-        <item>Encolhimento unilateral</item>
-    </string-array>
+    <string name="exercise_shoulders_1_desc">Desenvolvimento acima da cabeça em pé com barra. Movimento composto para construir força e tamanho dos ombros.</string>
+    <string name="exercise_shoulders_2_desc">Desenvolvimento acima da cabeça com halteres. Permite padrão de movimento natural e amplitude completa.</string>
+    <string name="exercise_shoulders_3_desc">Exercício de isolamento para deltoides laterais. Elevando halteres para os lados desenvolvendo largura dos ombros.</string>
+    <string name="exercise_shoulders_4_desc">Foca deltoides frontais elevando pesos para frente. Complementa movimentos de empurrar para desenvolvimento frontal.</string>
+    <string name="exercise_shoulders_5_desc">Puxando peso verticalmente até o queixo. Trabalha ombros e trapézio com pegada estreita.</string>
+    <string name="exercise_shoulders_6_desc">Desenvolvimento rotativo inventado por Arnold Schwarzenegger. Combina pressão com rotação para ativação completa.</string>
+    <string name="exercise_shoulders_7_desc">Exercício no cabo puxando ao nível do rosto. Foca deltoides posteriores e parte superior das costas melhorando postura.</string>
+    <string name="exercise_shoulders_8_desc">Crucifixo curvado focando deltoides posteriores. Importante para desenvolvimento equilibrado dos ombros.</string>
+    <string name="exercise_shoulders_9_desc">Isolamento de deltoide posterior na máquina. Proporciona posição estável para trabalho focado do deltoide posterior.</string>
+    <string name="exercise_shoulders_10_desc">Desenvolvimento acima da cabeça sentado na máquina. Posição estável permitindo foco na contração dos ombros.</string>
+
+    <string name="exercise_arms_1">Rosca direta</string>
+    <string name="exercise_arms_2">Rosca alternada</string>
+    <string name="exercise_arms_3">Rosca martelo</string>
+    <string name="exercise_arms_4">Rosca scott</string>
+    <string name="exercise_arms_5">Rosca concentrada</string>
+    <string name="exercise_arms_6">Tríceps pulley</string>
+    <string name="exercise_arms_7">Tríceps testa</string>
+    <string name="exercise_arms_8">Tríceps francês</string>
+    <string name="exercise_arms_9">Mergulho banco</string>
+    <string name="exercise_arms_10">Rosca inversa</string>
+    <string name="exercise_arms_11">Tríceps coice</string>
+    <string name="exercise_arms_12">Supino fechado</string>
+
+    <string name="exercise_arms_1_desc">Exercício clássico de bíceps com barra. Rosca em pé com pegada supinada para máxima ativação do bíceps.</string>
+    <string name="exercise_arms_2_desc">Roscas com halteres alternando braços. Permite foco em cada bíceps independentemente com movimento natural.</string>
+    <string name="exercise_arms_3_desc">Rosca com halter com pegada neutra. Trabalha bíceps e braquial para espessura do braço.</string>
+    <string name="exercise_arms_4_desc">Rosca de bíceps no banco scott. Isola bíceps eliminando impulso com braços apoiados.</string>
+    <string name="exercise_arms_5_desc">Rosca sentada de um braço. Máximo isolamento e contração de pico para desenvolvimento do bíceps.</string>
+    <string name="exercise_arms_6_desc">Exercício de tríceps no cabo empurrando para baixo. Isola tríceps com tensão constante durante movimento.</string>
+    <string name="exercise_arms_7_desc">Extensão de tríceps deitado baixando peso até a testa. Isolamento intenso de tríceps com alongamento completo.</string>
+    <string name="exercise_arms_8_desc">Extensão de tríceps acima da cabeça com halter ou cabo. Alonga cabeça longa do tríceps para desenvolvimento completo.</string>
+    <string name="exercise_arms_9_desc">Exercício de tríceps com peso corporal no banco. Dificuldade escalável efetiva para força e tamanho do tríceps.</string>
+    <string name="exercise_arms_10_desc">Rosca com pegada pronada. Trabalha braquiorradial e antebraços junto com bíceps.</string>
+    <string name="exercise_arms_11_desc">Exercício de tríceps de um braço inclinado para frente. Movimento de isolamento para definição do tríceps.</string>
+    <string name="exercise_arms_12_desc">Supino com pegada estreita. Movimento composto enfatizando tríceps e peito interno.</string>
+
+    <string name="exercise_abs_1">Prancha</string>
+    <string name="exercise_abs_2">Abdominal</string>
+    <string name="exercise_abs_3">Elevação de pernas</string>
+    <string name="exercise_abs_4">Prancha lateral</string>
+    <string name="exercise_abs_5">Mountain climbers</string>
+    <string name="exercise_abs_6">Russian twist</string>
+    <string name="exercise_abs_7">V-ups</string>
+    <string name="exercise_abs_8">Abdominal canivete</string>
+
+    <string name="exercise_abs_1_desc">Exercício isométrico de core mantendo corpo reto. Constrói estabilidade e resistência do core engajando todo abdômen.</string>
+    <string name="exercise_abs_2_desc">Exercício clássico de abdominal flexionando coluna. Trabalha reto abdominal com movimento controlado de enrolamento.</string>
+    <string name="exercise_abs_3_desc">Exercício de abdômen inferior elevando pernas da posição suspensa ou deitada. Ativação intensa do core.</string>
+    <string name="exercise_abs_4_desc">Prancha lateral trabalhando oblíquos. Constrói força e estabilidade lateral do core mantendo corpo de lado.</string>
+    <string name="exercise_abs_5_desc">Exercício dinâmico alternando impulso dos joelhos. Combina cardio com ativação do core.</string>
+    <string name="exercise_abs_6_desc">Exercício rotacional de abdômen para oblíquos. Movimento de torção sentado com ou sem peso.</string>
+    <string name="exercise_abs_7_desc">Exercício avançado de abdômen tocando mãos nos pés. Combina ativação superior e inferior do abdômen em forma de V.</string>
+    <string name="exercise_abs_8_desc">Abdominal dinâmico juntando joelhos e torso. Contração completa do abdômen em movimento de dobra.</string>
+
+    <string name="exercise_calves_1">Gêmeos em pé</string>
+    <string name="exercise_calves_2">Gêmeos sentado</string>
+    <string name="exercise_calves_3">Elevação de panturrilha no leg press</string>
+    <string name="exercise_calves_4">Panturrilha burro</string>
+    <string name="exercise_calves_5">Elevação de panturrilha unilateral</string>
+    <string name="exercise_calves_6">Gêmeos no smith</string>
+
+    <string name="exercise_calves_1_desc">Exercício de panturrilha em pé na máquina. Trabalha gastrocnêmio com extensão e contração completas.</string>
+    <string name="exercise_calves_2_desc">Elevação de panturrilha sentado trabalhando sóleo. Executado com joelhos dobrados isolando músculo inferior da panturrilha.</string>
+    <string name="exercise_calves_3_desc">Elevações de panturrilha executadas no leg press. Permite carga pesada para desenvolvimento da panturrilha.</string>
+    <string name="exercise_calves_4_desc">Elevação de panturrilha curvado com peso nas costas. Alongamento e contração intensos para panturrilhas.</string>
+    <string name="exercise_calves_5_desc">Elevação unilateral de panturrilha. Corrige desequilíbrios e permite amplitude completa por perna.</string>
+    <string name="exercise_calves_6_desc">Elevações de panturrilha no smith machine. Trajetória estável da barra para treino controlado de panturrilha.</string>
+
+    <string name="exercise_traps_1">Encolhimento com barra</string>
+    <string name="exercise_traps_2">Encolhimento com halteres</string>
+    <string name="exercise_traps_3">Remada alta</string>
+    <string name="exercise_traps_4">Face pull</string>
+    <string name="exercise_traps_5">Encolhimento unilateral</string>
+
+    <string name="exercise_traps_1_desc">Exercício clássico de trapézio encolhendo ombros com barra. Constrói espessura e força do trapézio superior.</string>
+    <string name="exercise_traps_2_desc">Variação de encolhimento com halteres. Permite trajetória natural de movimento e foco unilateral.</string>
+    <string name="exercise_traps_3_desc">Puxada vertical até o queixo trabalhando trapézio e ombros. Pegada estreita enfatiza ativação do trapézio superior.</string>
+    <string name="exercise_traps_4_desc">Puxada no cabo até nível do rosto. Trabalha parte superior das costas e trapézio melhorando postura.</string>
+    <string name="exercise_traps_5_desc">Encolhimento unilateral com halter. Corrige desequilíbrios do trapézio e permite trabalho concentrado.</string>
+
+    <string name="difficulty_beginner">Iniciante</string>
+    <string name="difficulty_intermediate">Intermediário</string>
+    <string name="difficulty_advanced">Avançado</string>
+
+    <string name="equipment_barbell">Barra</string>
+    <string name="equipment_dumbbell">Halteres</string>
+    <string name="equipment_machine">Máquina</string>
+    <string name="equipment_cable">Cabo</string>
+    <string name="equipment_bodyweight">Peso corporal</string>
+
 </resources>

@@ -17,7 +17,7 @@ class MuscleAdapter(context: Context, private val muscles: List<Muscle>) :
         val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.list_item_muscle, parent, false)
 
         val muscle = muscles[position]
-        val iconView = view.findViewById<ImageView>(R.id.muscleIcon)
+        val iconView = view.findViewById<ImageView>(R.id.muscleImage)
         val nameView = view.findViewById<TextView>(R.id.muscleName)
 
         iconView.setImageResource(muscle.iconResId)
