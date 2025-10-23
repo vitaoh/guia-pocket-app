@@ -294,4 +294,12 @@
     <string name="equipment_cable">Cable</string>
     <string name="equipment_bodyweight">Bodyweight</string>
 
+    <string name="view_exercises">View exercises</string>
+
+    <string name="description">Description</string>
+    <string name="muscles_worked">Muscles Worked</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="equipment">Equipment</string>
+    <string name="watch_tutorial">Watch Tutorial on YouTube</string>
+
 </resources>

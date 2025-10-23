@@ -194,4 +194,12 @@
     <string name="equipment_cable">Cabo</string>
     <string name="equipment_bodyweight">Peso corporal</string>
 
+    <string name="view_exercises">Ver exercício</string>
+
+    <string name="description">Descrição</string>
+    <string name="muscles_worked">Músculos Trabalhados</string>
+    <string name="difficulty">Dificuldade</string>
+    <string name="equipment">Equipamento</string>
+    <string name="watch_tutorial">Ver Tutorial no YouTube</string>
+
 </resources>
