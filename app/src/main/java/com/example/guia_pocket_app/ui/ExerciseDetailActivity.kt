@@ -32,6 +32,7 @@ class ExerciseDetailActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.exerciseDifficulty).text = it.difficulty
             findViewById<TextView>(R.id.exerciseEquipment).text = it.equipment
 
+
             findViewById<MaterialButton>(R.id.btnWatchYoutube).setOnClickListener { _ ->
                 openYouTubeSearch(it.youtubeSearchTerm)
             }
