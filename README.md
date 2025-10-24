@@ -33,9 +33,12 @@ O **Pocket Guide** é um guia de bolso para praticantes de musculação que dese
   <img src="assets/ptbr-escuro.png" alt="Interface em Inglês" width="300"/>
 </div>
 
-## 🎥 Demonstração em Vídeo
+## 🎥 Demonstração em Vídeo  
 
-[Assista ao vídeo de demonstração do app](assets/video.webm)
+[![Assista ao vídeo de demonstração do app](https://img.freepik.com/free-icon/play-button_318-42540.jpg?w=200)](https://drive.google.com/file/d/1eKzqiugHjrjhbp5X_SiaDdZibj78YzOf/view?usp=sharing)
+
+> 🔗 Clique na imagem acima para assistir à demonstração completa do aplicativo.
+
 
 ## 🛠️ Tecnologias Utilizadas
 
