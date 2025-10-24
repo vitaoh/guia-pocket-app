@@ -16,14 +16,17 @@ O **Pocket Guide** é um guia de bolso para praticantes de musculação que dese
 
 ## 📸 Screenshots
 
-### Modo Claro e Escuro
+
+<h3 align="center">Modo Claro e Escuro</h3>
 
 <div align="center">
   <img src="assets/tema-claro.png" alt="Modo Claro" width="300"/>
   <img src="assets/tema-escuro.png" alt="Modo Escuro" width="300"/>
 </div>
 
-### Suporte a Idiomas
+<br>
+
+<h3 align="center">Suporte a Idiomas</h3>
 
 <div align="center">
   <img src="assets/ptbr.png" alt="Interface em Português" width="300"/>
