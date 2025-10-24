@@ -1,73 +1,62 @@
-Pocket Guide 🏋️
+# Pocket Guide 🏋️
+
 Aplicativo de musculação desenvolvido no Android Studio, com informações detalhadas sobre cada exercício, organizados conforme os principais grupos musculares.
 
-📋 Descrição
-O Pocket Guide é um guia de bolso para praticantes de musculação que desejam ter acesso rápido e prático a informações sobre exercícios. O aplicativo organiza os exercícios por grupos musculares, facilitando a consulta durante o treino.
+## 📋 Descrição
 
-✨ Funcionalidades
-📱 Interface intuitiva e fácil de usar
+O **Pocket Guide** é um guia de bolso para praticantes de musculação que desejam ter acesso rápido e prático a informações sobre exercícios. O aplicativo organiza os exercícios por grupos musculares, facilitando a consulta durante o treino.
 
-💪 Exercícios organizados por grupos musculares:
+## ✨ Funcionalidades
 
-Peito (Chest)
+- 📱 Interface intuitiva e fácil de usar
+- 💪 Exercícios organizados por grupos musculares (Peito, Costas, Pernas, Ombros, Braços e Abdômen)
+- 🌐 Suporte a múltiplos idiomas (Português e Inglês)
+- 🌗 Alternância entre modo claro e escuro
+- 🎨 Design moderno e responsivo
 
-Costas (Back)
+## 📸 Screenshots
 
-Pernas (Legs)
+### Modo Claro e Escuro
 
-Ombros (Shoulders)
-
-Braços (Arms)
-
-Abdômen (Abs)
-
-🌐 Suporte a múltiplos idiomas (Português e Inglês)
-
-🌗 Modo claro e escuro
-
-🎨 Design moderno e responsivo
-
-📸 Screenshots
-Modo Claro e Escuro
-<div align="center"> 
-    <img src="assets/tema-claro.png" alt="Modo Claro" width="300"/> 
-    <img src="assets/tema-escuro.png" alt="Modo Escuro" width="300"/> 
-</div>
-
-Suporte a Idiomas
 <div align="center">
-    <img src="assets/ptbr.png" alt="Interface em Português" width="300"/> 
-    <img src="assets/ptbr-escuro.png" alt="Interface em Inglês" width="300"/> 
+  <img src="assets/tema-claro.png" alt="Modo Claro" width="300"/>
+  <img src="assets/tema-escuro.png" alt="Modo Escuro" width="300"/>
 </div>
 
-🎥 Demonstração em Vídeo
-Assista ao vídeo de demonstração do app
+### Suporte a Idiomas
 
-🛠️ Tecnologias Utilizadas
-Linguagem: Kotlin
+<div align="center">
+  <img src="assets/ptbr.png" alt="Interface em Português" width="300"/>
+  <img src="assets/ptbr-escuro.png" alt="Interface em Inglês" width="300"/>
+</div>
 
-IDE: Android Studio
+## 🎥 Demonstração em Vídeo
 
-SDK: Android SDK
+[Assista ao vídeo de demonstração do app](assets/video.webm)
 
-Arquitetura: MVVM (Model-View-ViewModel)
+## 🛠️ Tecnologias Utilizadas
 
-UI: Material Design 3
+- **Linguagem:** Kotlin
+- **IDE:** Android Studio
+- **SDK:** Android SDK
+- **Arquitetura:** MVVM (Model-View-ViewModel)
+- **UI:** Material Design 3
 
-📦 Como Executar o Projeto
-Clone este repositório:
+## 📦 Como Executar o Projeto
 
-bash
+1. Clone este repositório:
+```bash
 git clone https://github.com/vitaoh/guia-pocket-app.git
-Abra o projeto no Android Studio
+```
 
-Aguarde a sincronização do Gradle
+2. Abra o projeto no Android Studio
 
-Execute o app em um emulador ou dispositivo físico
+3. Aguarde a sincronização do Gradle
 
-📱 Requisitos do Sistema
-Android 5.0 (API 21) ou superior
+4. Execute o app em um emulador ou dispositivo físico
 
-Android Studio Arctic Fox ou superior
+## 📱 Requisitos do Sistema
 
-JDK 11 ou superior
+- Android 5.0 (API 21) ou superior
+- Android Studio Arctic Fox ou superior
+- JDK 11 ou superior
