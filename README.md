@@ -35,9 +35,9 @@ O **Pocket Guide** é um guia de bolso para praticantes de musculação que dese
 
 ## 🎥 Demonstração em Vídeo  
 
-[![Clique para assistir o vídeo](https://github.com/vitaoh/guia-pocket-app/raw/main/assets/tema-claro.png)](https://raw.githubusercontent.com/vitaoh/guia-pocket-app/main/assets/video1.mp4)
+[![Assista ao vídeo de demonstração do app](https://img.shields.io/badge/▶️%20Assistir%20ao%20vídeo-blue?style=for-the-badge)](https://drive.google.com/file/d/1eKzqiugHjrjhbp5X_SiaDdZibj78YzOf/view?usp=sharing)
 
-> 🔗 Clique na imagem acima para assistir à demonstração completa do aplicativo.
+> 🔗 Clique no botão acima para assistir à demonstração completa do aplicativo.
 
 
 ## 🛠️ Tecnologias Utilizadas
