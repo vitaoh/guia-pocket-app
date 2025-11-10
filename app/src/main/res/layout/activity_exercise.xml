@@ -41,8 +41,8 @@
             android:textStyle="bold" />
     </com.google.android.material.card.MaterialCardView>
 
-    <ListView
-        android:id="@+id/exerciseListView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exerciseRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:clipToPadding="false"

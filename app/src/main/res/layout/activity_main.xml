@@ -71,8 +71,8 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <ListView
-        android:id="@+id/muscleListView"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/muscleRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:clipToPadding="false"

@@ -2,16 +2,22 @@ package com.example.guia_pocket_app.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.ListView
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.guia_pocket_app.R
 import com.example.guia_pocket_app.model.Exercise
 import com.google.android.material.appbar.MaterialToolbar
 
 class ExerciseActivity : AppCompatActivity() {
+
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var exercises: List<Exercise>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,18 +31,15 @@ class ExerciseActivity : AppCompatActivity() {
 
         val muscleKey = intent.getStringExtra("muscle_key") ?: "chest"
         val titleView = findViewById<TextView>(R.id.muscleTitle)
-        val listView = findViewById<ListView>(R.id.exerciseListView)
+        recyclerView = findViewById(R.id.exerciseRecyclerView)
 
         val muscleName = getMuscleNameByKey(muscleKey)
         titleView.text = getString(R.string.exercise_list_title, muscleName)
 
-        val exercises = getExercisesByKey(muscleKey)
-        val exerciseNames = exercises.map { it.name }
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, exerciseNames)
-        listView.adapter = adapter
+        exercises = getExercisesByKey(muscleKey)
 
-        listView.setOnItemClickListener { _, _, position, _ ->
-            val exercise = exercises[position]
+        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.adapter = ExerciseAdapter(exercises) { exercise ->
             val intent = Intent(this, ExerciseDetailActivity::class.java)
             intent.putExtra("exercise", exercise)
             startActivity(intent)
@@ -76,7 +79,11 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_chest_1),
                 description = getString(R.string.exercise_chest_1_desc),
-                muscles = listOf(getString(R.string.muscle_chest), getString(R.string.muscle_shoulders), getString(R.string.muscle_arms)),
+                muscles = listOf(
+                    getString(R.string.muscle_chest),
+                    getString(R.string.muscle_shoulders),
+                    getString(R.string.muscle_arms)
+                ),
                 difficulty = getString(R.string.difficulty_beginner),
                 equipment = getString(R.string.equipment_barbell),
                 youtubeSearchTerm = "flat bench press"
@@ -84,7 +91,10 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_chest_2),
                 description = getString(R.string.exercise_chest_2_desc),
-                muscles = listOf(getString(R.string.muscle_chest), getString(R.string.muscle_shoulders)),
+                muscles = listOf(
+                    getString(R.string.muscle_chest),
+                    getString(R.string.muscle_shoulders)
+                ),
                 difficulty = getString(R.string.difficulty_beginner),
                 equipment = getString(R.string.equipment_barbell),
                 youtubeSearchTerm = "incline bench press"
@@ -124,7 +134,11 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_chest_7),
                 description = getString(R.string.exercise_chest_7_desc),
-                muscles = listOf(getString(R.string.muscle_chest), getString(R.string.muscle_shoulders), getString(R.string.muscle_arms)),
+                muscles = listOf(
+                    getString(R.string.muscle_chest),
+                    getString(R.string.muscle_shoulders),
+                    getString(R.string.muscle_arms)
+                ),
                 difficulty = getString(R.string.difficulty_beginner),
                 equipment = getString(R.string.equipment_bodyweight),
                 youtubeSearchTerm = "push up"
@@ -148,7 +162,11 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_chest_10),
                 description = getString(R.string.exercise_chest_10_desc),
-                muscles = listOf(getString(R.string.muscle_chest), getString(R.string.muscle_shoulders), getString(R.string.muscle_arms)),
+                muscles = listOf(
+                    getString(R.string.muscle_chest),
+                    getString(R.string.muscle_shoulders),
+                    getString(R.string.muscle_arms)
+                ),
                 difficulty = getString(R.string.difficulty_beginner),
                 equipment = getString(R.string.equipment_dumbbell),
                 youtubeSearchTerm = "dumbbell bench press"
@@ -225,7 +243,10 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_back_8),
                 description = getString(R.string.exercise_back_8_desc),
-                muscles = listOf(getString(R.string.muscle_back), getString(R.string.muscle_shoulders)),
+                muscles = listOf(
+                    getString(R.string.muscle_back),
+                    getString(R.string.muscle_shoulders)
+                ),
                 difficulty = getString(R.string.difficulty_intermediate),
                 equipment = getString(R.string.equipment_barbell),
                 youtubeSearchTerm = "upright row"
@@ -371,7 +392,10 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_shoulders_1),
                 description = getString(R.string.exercise_shoulders_1_desc),
-                muscles = listOf(getString(R.string.muscle_shoulders), getString(R.string.muscle_arms)),
+                muscles = listOf(
+                    getString(R.string.muscle_shoulders),
+                    getString(R.string.muscle_arms)
+                ),
                 difficulty = getString(R.string.difficulty_intermediate),
                 equipment = getString(R.string.equipment_barbell),
                 youtubeSearchTerm = "military press"
@@ -403,7 +427,10 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_shoulders_5),
                 description = getString(R.string.exercise_shoulders_5_desc),
-                muscles = listOf(getString(R.string.muscle_shoulders), getString(R.string.muscle_traps)),
+                muscles = listOf(
+                    getString(R.string.muscle_shoulders),
+                    getString(R.string.muscle_traps)
+                ),
                 difficulty = getString(R.string.difficulty_intermediate),
                 equipment = getString(R.string.equipment_barbell),
                 youtubeSearchTerm = "upright row"
@@ -419,7 +446,10 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_shoulders_7),
                 description = getString(R.string.exercise_shoulders_7_desc),
-                muscles = listOf(getString(R.string.muscle_shoulders), getString(R.string.muscle_back)),
+                muscles = listOf(
+                    getString(R.string.muscle_shoulders),
+                    getString(R.string.muscle_back)
+                ),
                 difficulty = getString(R.string.difficulty_beginner),
                 equipment = getString(R.string.equipment_cable),
                 youtubeSearchTerm = "face pull"
@@ -695,7 +725,10 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_traps_3),
                 description = getString(R.string.exercise_traps_3_desc),
-                muscles = listOf(getString(R.string.muscle_traps), getString(R.string.muscle_shoulders)),
+                muscles = listOf(
+                    getString(R.string.muscle_traps),
+                    getString(R.string.muscle_shoulders)
+                ),
                 difficulty = getString(R.string.difficulty_intermediate),
                 equipment = getString(R.string.equipment_barbell),
                 youtubeSearchTerm = "upright row"
@@ -703,7 +736,10 @@ class ExerciseActivity : AppCompatActivity() {
             Exercise(
                 name = getString(R.string.exercise_traps_4),
                 description = getString(R.string.exercise_traps_4_desc),
-                muscles = listOf(getString(R.string.muscle_traps), getString(R.string.muscle_shoulders)),
+                muscles = listOf(
+                    getString(R.string.muscle_traps),
+                    getString(R.string.muscle_shoulders)
+                ),
                 difficulty = getString(R.string.difficulty_beginner),
                 equipment = getString(R.string.equipment_cable),
                 youtubeSearchTerm = "face pull"
@@ -722,5 +758,34 @@ class ExerciseActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         onBackPressedDispatcher.onBackPressed()
         return true
+    }
+
+    class ExerciseAdapter(
+        private val exercises: List<Exercise>,
+        private val onItemClick: (Exercise) -> Unit
+    ) : RecyclerView.Adapter<ExerciseAdapter.ExerciseViewHolder>() {
+
+        inner class ExerciseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+            val nameView: TextView = itemView.findViewById(android.R.id.text1)
+
+            init {
+                itemView.setOnClickListener {
+                    onItemClick(exercises[adapterPosition])
+                }
+            }
+        }
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExerciseViewHolder {
+            val view = LayoutInflater.from(parent.context)
+                .inflate(android.R.layout.simple_list_item_1, parent, false)
+            return ExerciseViewHolder(view)
+        }
+
+        override fun onBindViewHolder(holder: ExerciseViewHolder, position: Int) {
+            val exercise = exercises[position]
+            holder.nameView.text = exercise.name
+        }
+
+        override fun getItemCount(): Int = exercises.size
     }
 }

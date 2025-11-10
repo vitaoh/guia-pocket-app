@@ -10,6 +10,8 @@ import com.example.guia_pocket_app.R
 import com.example.guia_pocket_app.databinding.ActivityMainBinding
 import com.example.guia_pocket_app.model.Muscle
 import com.example.guia_pocket_app.ui.adapter.MuscleAdapter
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,22 +32,22 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         supportActionBar?.hide()
         WindowCompat.setDecorFitsSystemWindows(window, true)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val adapter = MuscleAdapter(this, muscleList)
-        binding.muscleListView.adapter = adapter
+        val recyclerView = binding.muscleRecyclerView
+        recyclerView.layoutManager = LinearLayoutManager(this)
 
-        binding.muscleListView.setOnItemClickListener { _, _, position, _ ->
+        val adapter = MuscleAdapter(muscleList) { position ->
             val muscle = muscleList[position]
             val intent = Intent(this, ExerciseActivity::class.java)
             intent.putExtra("muscle_key", muscle.key)
             startActivity(intent)
         }
+        recyclerView.adapter = adapter
 
         binding.btnToggleTheme.setOnClickListener {
             val isNight = AppCompatDelegate.getDefaultNightMode() ==

@@ -9,20 +9,37 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.guia_pocket_app.R
 import com.example.guia_pocket_app.model.Muscle
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-class MuscleAdapter(context: Context, private val muscles: List<Muscle>) :
-    ArrayAdapter<Muscle>(context, 0, muscles) {
+class MuscleAdapter(
+    private val muscles: List<Muscle>,
+    private val onItemClick: (position: Int) -> Unit
+) : RecyclerView.Adapter<MuscleAdapter.MuscleViewHolder>() {
 
-    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        val view = convertView ?: LayoutInflater.from(context).inflate(R.layout.list_item_muscle, parent, false)
+    inner class MuscleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val muscleName: TextView = itemView.findViewById(R.id.muscleName)
+        val muscleImage: ImageView = itemView.findViewById(R.id.muscleImage)
 
-        val muscle = muscles[position]
-        val iconView = view.findViewById<ImageView>(R.id.muscleImage)
-        val nameView = view.findViewById<TextView>(R.id.muscleName)
-
-        iconView.setImageResource(muscle.iconResId)
-        nameView.text = muscle.name
-
-        return view
+        init {
+            itemView.setOnClickListener {
+                onItemClick(adapterPosition)
+            }
+        }
     }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MuscleViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.list_item_muscle, parent, false)
+        return MuscleViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: MuscleViewHolder, position: Int) {
+        val muscle = muscles[position]
+        holder.muscleName.text = muscle.name
+        holder.muscleImage.setImageResource(muscle.iconResId)
+    }
+
+    override fun getItemCount(): Int = muscles.size
 }
+
