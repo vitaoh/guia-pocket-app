@@ -41,7 +41,10 @@ class ExerciseDetailActivity : AppCompatActivity() {
 
     private fun openYouTubeSearch(searchTerm: String) {
         val searchQuery = "$searchTerm tutorial"
-        val youtubeIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/results?search_query=${Uri.encode(searchQuery)}"))
+        val youtubeIntent = Intent(
+            Intent.ACTION_VIEW,
+            Uri.parse("https://www.youtube.com/results?search_query=${Uri.encode(searchQuery)}")
+        )
         startActivity(youtubeIntent)
     }
 

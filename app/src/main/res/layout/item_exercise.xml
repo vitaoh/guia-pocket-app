@@ -1,75 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="12dp"
     android:layout_margin="8dp"
-    android:background="?attr/selectableItemBackground">
+    android:background="?attr/selectableItemBackground"
+    android:padding="12dp">
 
-    <!-- Imagem do Exercício -->
     <ImageView
         android:id="@+id/iv_exercise"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:scaleType="centerCrop"
         android:contentDescription="@string/exercise_image"
+        android:scaleType="centerCrop"
         android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Container de Informações -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/info_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        app:layout_constraintStart_toEndOf="@id/iv_exercise"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toEndOf="@id/iv_exercise"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Nome do Exercício -->
         <TextView
             android:id="@+id/tv_exercise_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textStyle="bold"
             android:textColor="?attr/colorOnSurface"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Bench Press" />
 
-        <!-- Dificuldade -->
         <TextView
             android:id="@+id/tv_exercise_difficulty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="?attr/colorPrimary"
             android:layout_marginTop="4dp"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_exercise_name"
             tools:text="Beginner" />
 
-        <!-- Equipamento -->
         <TextView
             android:id="@+id/tv_exercise_equipment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
-            android:textColor="?attr/colorSecondary"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_exercise_difficulty"
             app:layout_constraintTop_toBottomOf="@id/tv_exercise_name"
-            app:layout_constraintEnd_toEndOf="parent"
             tools:text="Barbell" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
