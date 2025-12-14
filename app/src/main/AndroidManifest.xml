@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Guiapocketapp">
 
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,12 +21,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.ExerciseActivity" />
+        <activity android:name=".ui.activity.ExerciseActivity" />
 
         <activity
-            android:name=".ui.ExerciseDetailActivity"
-            android:parentActivityName=".ui.ExerciseActivity"
+            android:name=".ui.activity.ExerciseDetailActivity"
+            android:parentActivityName=".ui.activity.ExerciseActivity"
             android:exported="false" />
+
+        <activity android:name=".ui.activity.CadastroExerciseActivity" />
 
     </application>
 

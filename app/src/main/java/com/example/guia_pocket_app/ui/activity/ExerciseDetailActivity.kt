@@ -1,4 +1,4 @@
-package com.example.guia_pocket_app.ui
+package com.example.guia_pocket_app.ui.activity
 
 import android.content.Intent
 import android.net.Uri
@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import com.example.guia_pocket_app.R
-import com.example.guia_pocket_app.model.Exercise
+import com.example.guia_pocket_app.data.model.Exercise
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
 
@@ -28,7 +28,7 @@ class ExerciseDetailActivity : AppCompatActivity() {
         exercise?.let {
             findViewById<TextView>(R.id.exerciseName).text = it.name
             findViewById<TextView>(R.id.exerciseDescription).text = it.description
-            findViewById<TextView>(R.id.exerciseMuscles).text = it.muscles.joinToString(", ")
+            findViewById<TextView>(R.id.exerciseMuscles).text = it.muscles
             findViewById<TextView>(R.id.exerciseDifficulty).text = it.difficulty
             findViewById<TextView>(R.id.exerciseEquipment).text = it.equipment
 

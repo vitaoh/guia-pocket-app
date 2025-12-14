@@ -1,4 +1,4 @@
-package com.example.guia_pocket_app.model
+package com.example.guia_pocket_app.data.model
 
 data class Muscle(
     val name: String,

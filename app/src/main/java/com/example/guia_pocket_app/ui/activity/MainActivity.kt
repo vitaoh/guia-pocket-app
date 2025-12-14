@@ -1,4 +1,4 @@
-package com.example.guia_pocket_app.ui
+package com.example.guia_pocket_app.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,10 +8,9 @@ import androidx.core.os.LocaleListCompat
 import androidx.core.view.WindowCompat
 import com.example.guia_pocket_app.R
 import com.example.guia_pocket_app.databinding.ActivityMainBinding
-import com.example.guia_pocket_app.model.Muscle
+import com.example.guia_pocket_app.data.model.Muscle
 import com.example.guia_pocket_app.ui.adapter.MuscleAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 

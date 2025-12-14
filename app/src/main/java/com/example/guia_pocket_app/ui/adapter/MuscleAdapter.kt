@@ -1,15 +1,12 @@
 package com.example.guia_pocket_app.ui.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.guia_pocket_app.R
-import com.example.guia_pocket_app.model.Muscle
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.guia_pocket_app.data.model.Muscle
 import androidx.recyclerview.widget.RecyclerView
 
 class MuscleAdapter(

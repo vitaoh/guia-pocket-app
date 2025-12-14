@@ -5,7 +5,6 @@
     <string name="theme">TEMA</string>
     <string name="muscle_list_title">Lista de Músculos</string>
     <string name="exercise_list_title">Exercícios para %1$s</string>
-    <string name="no_exercises">Sem exercícios disponíveis</string>
 
     <string name="muscle_chest">Peito</string>
     <string name="muscle_back">Costas</string>
@@ -184,22 +183,52 @@
     <string name="exercise_traps_4_desc">Puxada no cabo até nível do rosto. Trabalha parte superior das costas e trapézio melhorando postura.</string>
     <string name="exercise_traps_5_desc">Encolhimento unilateral com halter. Corrige desequilíbrios do trapézio e permite trabalho concentrado.</string>
 
-    <string name="difficulty_beginner">Iniciante</string>
-    <string name="difficulty_intermediate">Intermediário</string>
-    <string name="difficulty_advanced">Avançado</string>
-
-    <string name="equipment_barbell">Barra</string>
-    <string name="equipment_dumbbell">Halteres</string>
-    <string name="equipment_machine">Máquina</string>
-    <string name="equipment_cable">Cabo</string>
-    <string name="equipment_bodyweight">Peso corporal</string>
-
     <string name="view_exercises">Ver exercício</string>
 
     <string name="description">Descrição</string>
     <string name="muscles_worked">Músculos Trabalhados</string>
+    <string name="watch_tutorial">Ver Tutorial no YouTube</string>
+
+    <!-- Activity Cadastro Exercício -->
+    <string name="add_exercise">Adicionar Exercício</string>
+    <string name="exercise_name">Nome do Exercício</string>
+    <string name="exercise_description">Descrição</string>
+    <string name="exercise_image">Imagem do Exercício</string>
+    <string name="select_image">Selecionar Imagem</string>
+    <string name="image_selected">Imagem Selecionada ✓</string>
     <string name="difficulty">Dificuldade</string>
     <string name="equipment">Equipamento</string>
-    <string name="watch_tutorial">Ver Tutorial no YouTube</string>
+    <string name="youtube_search_term">Termo de Busca YouTube</string>
+    <string name="save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Dificuldades -->
+    <string name="difficulty_beginner">Iniciante</string>
+    <string name="difficulty_intermediate">Intermediário</string>
+    <string name="difficulty_advanced">Avançado</string>
+
+    <!-- Equipamentos -->
+    <string name="equipment_barbell">Barra</string>
+    <string name="equipment_dumbbell">Haltere</string>
+    <string name="equipment_machine">Máquina</string>
+    <string name="equipment_cable">Cabo</string>
+    <string name="equipment_resistance_band">Faixa Elástica</string>
+    <string name="equipment_bodyweight">Peso Corporal</string>
+
+    <!-- Mensagens de Validação -->
+    <string name="error_empty_name">Por favor, insira o nome do exercício</string>
+    <string name="error_empty_description">Por favor, insira a descrição do exercício</string>
+    <string name="error_empty_youtube">Por favor, insira um termo de busca YouTube</string>
+    <string name="exercise_saved_success">Exercício salvo com sucesso!</string>
+    <string name="error_save_exercise">Erro ao salvar exercício</string>
+
+    <!-- ExerciseActivity -->
+    <string name="search_exercises">Buscar exercício...</string>
+    <string name="add_new_exercise">Novo Exercício</string>
+
+    <!-- Outros -->
+    <string name="loading">Carregando...</string>
+    <string name="no_exercises">Nenhum exercício encontrado</string>
+    <string name="retry">Tentar Novamente</string>
 
 </resources>
