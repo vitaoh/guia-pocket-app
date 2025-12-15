@@ -9,11 +9,11 @@ import com.example.guia_pocket_app.data.model.Exercise
 @Database(entities = [Exercise::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun exerciseDao(): ExerciseDao
-    
+
     companion object {
         @Volatile
         private var instance: AppDatabase? = null
-        
+
         fun getInstance(context: Context): AppDatabase {
             return instance ?: synchronized(this) {
                 val newInstance = Room.databaseBuilder(

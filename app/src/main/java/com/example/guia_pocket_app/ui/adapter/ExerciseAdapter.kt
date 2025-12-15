@@ -50,17 +50,14 @@ class ExerciseAdapter(
                     }
                 }
 
-                // Clique no card: abre detalhes
                 root.setOnClickListener {
                     onItemClick(exercise)
                 }
 
-                // Botão Editar
                 btnEdit.setOnClickListener {
                     onEditClick(exercise)
                 }
 
-                // Botão Excluir
                 btnDelete.setOnClickListener {
                     onDeleteClick(exercise)
                 }

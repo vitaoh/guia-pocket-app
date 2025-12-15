@@ -82,7 +82,7 @@ class CadastroExerciseActivity : AppCompatActivity() {
             difficulties
         )
 
-        (binding.spinnerDifficulty as? AutoCompleteTextView)?.apply {
+        binding.spinnerDifficulty?.apply {
             setAdapter(adapter)
             setText(difficulties[0], false)
         }
@@ -117,7 +117,6 @@ class CadastroExerciseActivity : AppCompatActivity() {
         val equipment = binding.spinnerEquipment.text.toString()
         val youtubeSearchTerm = binding.etYoutubeTerm.text.toString().trim()
 
-        // Validações
         if (name.isEmpty()) {
             Toast.makeText(this, R.string.error_empty_name, Toast.LENGTH_SHORT).show()
             return

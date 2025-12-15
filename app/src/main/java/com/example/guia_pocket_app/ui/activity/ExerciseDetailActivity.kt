@@ -118,7 +118,6 @@ class ExerciseDetailActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // Atualizar dados se o exercício foi editado
         lifecycleScope.launch {
             database.exerciseDao().getExerciseById(currentExercise.id)?.let { updatedExercise ->
                 currentExercise = updatedExercise

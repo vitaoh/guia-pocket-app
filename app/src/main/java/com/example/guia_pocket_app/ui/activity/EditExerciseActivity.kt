@@ -41,7 +41,6 @@ class EditExerciseActivity : AppCompatActivity() {
         binding = ActivityCadastroExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Obter ID do exercício
         exerciseId = intent.getIntExtra("exercise_id", -1)
 
         if (exerciseId == -1) {
@@ -56,7 +55,6 @@ class EditExerciseActivity : AppCompatActivity() {
 
         database = AppDatabase.getInstance(this)
 
-        // Carregar exercício do banco de dados
         loadExercise()
     }
 
@@ -109,17 +107,14 @@ class EditExerciseActivity : AppCompatActivity() {
 
     private fun loadExerciseData() {
         currentExercise?.let { exercise ->
-            // Preencher campos com dados do exercício
             binding.etExerciseName.setText(exercise.name)
             binding.etExerciseDescription.setText(exercise.description)
             binding.spinnerDifficulty.setText(exercise.difficulty, false)
             binding.spinnerEquipment.setText(exercise.equipment, false)
             binding.etYoutubeTerm.setText(exercise.youtubeSearchTerm)
 
-            // Carregar imagem se existir
             if (exercise.imageUri.isNotEmpty()) {
                 try {
-                    // Verificar se a URI é válida antes de tentar carregar
                     val uriString = exercise.imageUri
                     if (uriString.startsWith("content://") || uriString.startsWith("file://")) {
                         val uri = Uri.parse(uriString)
@@ -128,7 +123,6 @@ class EditExerciseActivity : AppCompatActivity() {
                         binding.btnSelectImage.text = getString(R.string.image_selected)
                     }
                 } catch (e: Exception) {
-                    // Se não conseguir carregar, não faz nada
                     e.printStackTrace()
                 }
             }

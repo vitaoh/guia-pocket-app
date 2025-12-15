@@ -135,7 +135,6 @@ class ExerciseActivity : AppCompatActivity() {
                 }
             },
             onDeleteClick = { exercise ->
-                // Mostrar diálogo de confirmação para excluir
                 showDeleteDialog(exercise)
             }
         )
