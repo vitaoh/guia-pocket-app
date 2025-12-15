@@ -3,6 +3,7 @@ package com.example.guia_pocket_app.ui.activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -15,6 +16,7 @@ import com.example.guia_pocket_app.data.model.Exercise
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.button.MaterialButton
 import kotlinx.coroutines.launch
+import java.io.File
 
 class ExerciseDetailActivity : AppCompatActivity() {
 
@@ -60,15 +62,38 @@ class ExerciseDetailActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.exerciseDifficulty).text = currentExercise.difficulty
         findViewById<TextView>(R.id.exerciseEquipment).text = currentExercise.equipment
 
+        // Carregar imagem
+        loadExerciseImage()
+
         findViewById<MaterialButton>(R.id.btnWatchYoutube).setOnClickListener {
             openYouTubeSearch(currentExercise.youtubeSearchTerm)
+        }
+    }
+
+    private fun loadExerciseImage() {
+        val imageView = findViewById<ImageView>(R.id.exerciseImage)
+
+        if (currentExercise.imageUri.isNotEmpty()) {
+            try {
+                // Verifica se é um arquivo local
+                val file = File(currentExercise.imageUri)
+                if (file.exists()) {
+                    imageView.setImageURI(Uri.fromFile(file))
+                } else {
+                    // Tenta como URI direta
+                    imageView.setImageURI(Uri.parse(currentExercise.imageUri))
+                }
+            } catch (e: Exception) {
+                e.printStackTrace()
+                // Se falhar, deixa a imagem padrão
+            }
         }
     }
 
     private fun openEditExercise() {
         try {
             val intent = Intent(this, EditExerciseActivity::class.java)
-            intent.putExtra("exercise_id", currentExercise.id)  // Passar apenas o ID
+            intent.putExtra("exercise_id", currentExercise.id)
             startActivity(intent)
         } catch (e: Exception) {
             e.printStackTrace()
