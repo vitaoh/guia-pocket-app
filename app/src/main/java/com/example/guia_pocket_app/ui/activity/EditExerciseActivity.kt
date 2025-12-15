@@ -15,6 +15,8 @@ import com.example.guia_pocket_app.data.database.AppDatabase
 import com.example.guia_pocket_app.data.model.Exercise
 import com.example.guia_pocket_app.databinding.ActivityCadastroExerciseBinding
 import kotlinx.coroutines.launch
+import java.io.File
+import java.io.FileOutputStream
 
 class EditExerciseActivity : AppCompatActivity() {
 
@@ -37,7 +39,6 @@ class EditExerciseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, true)
-
         binding = ActivityCadastroExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -75,6 +76,7 @@ class EditExerciseActivity : AppCompatActivity() {
 
                 setupUI()
                 loadExerciseData()
+
             } catch (e: Exception) {
                 e.printStackTrace()
                 Toast.makeText(
@@ -115,13 +117,10 @@ class EditExerciseActivity : AppCompatActivity() {
 
             if (exercise.imageUri.isNotEmpty()) {
                 try {
-                    val uriString = exercise.imageUri
-                    if (uriString.startsWith("content://") || uriString.startsWith("file://")) {
-                        val uri = Uri.parse(uriString)
-                        binding.ivExerciseImage.setImageURI(uri)
-                        selectedImageUri = uri
-                        binding.btnSelectImage.text = getString(R.string.image_selected)
-                    }
+                    val imageUri = Uri.parse(exercise.imageUri)
+                    binding.ivExerciseImage.setImageURI(imageUri)
+                    selectedImageUri = null // Não alterada a menos que novo arquivo seja selecionado
+                    binding.btnSelectImage.text = getString(R.string.image_selected)
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }
@@ -192,25 +191,35 @@ class EditExerciseActivity : AppCompatActivity() {
         }
 
         currentExercise?.let { originalExercise ->
-            val updatedExercise = originalExercise.copy(
-                name = name,
-                description = description,
-                difficulty = difficulty,
-                equipment = equipment,
-                youtubeSearchTerm = youtubeSearchTerm,
-                imageUri = selectedImageUri?.toString() ?: originalExercise.imageUri
-            )
-
             lifecycleScope.launch {
                 try {
+                    // Se uma nova imagem foi selecionada, copia para armazenamento interno
+                    val imageUri = if (selectedImageUri != null) {
+                        copyImageToInternalStorage(selectedImageUri!!)
+                    } else {
+                        originalExercise.imageUri // Mantém a imagem anterior
+                    }
+
+                    val updatedExercise = originalExercise.copy(
+                        name = name,
+                        description = description,
+                        difficulty = difficulty,
+                        equipment = equipment,
+                        youtubeSearchTerm = youtubeSearchTerm,
+                        imageUri = imageUri
+                    )
+
                     database.exerciseDao().updateExercise(updatedExercise)
+
                     Toast.makeText(
                         this@EditExerciseActivity,
                         R.string.exercise_updated_success,
                         Toast.LENGTH_SHORT
                     ).show()
+
                     setResult(Activity.RESULT_OK)
                     finish()
+
                 } catch (e: Exception) {
                     e.printStackTrace()
                     Toast.makeText(
@@ -220,6 +229,31 @@ class EditExerciseActivity : AppCompatActivity() {
                     ).show()
                 }
             }
+        }
+    }
+
+    /**
+     * Copia a imagem do Photo Picker para armazenamento interno da aplicação
+     * Retorna o caminho do arquivo copiado
+     */
+    private fun copyImageToInternalStorage(imageUri: Uri): String {
+        return try {
+            val inputStream = contentResolver.openInputStream(imageUri)
+            if (inputStream != null) {
+                val fileName = "exercise_${System.currentTimeMillis()}.jpg"
+                val file = File(filesDir, fileName)
+
+                FileOutputStream(file).use { outputStream ->
+                    inputStream.copyTo(outputStream)
+                }
+
+                file.absolutePath
+            } else {
+                ""
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            ""
         }
     }
 

@@ -15,6 +15,8 @@ import com.example.guia_pocket_app.data.database.AppDatabase
 import com.example.guia_pocket_app.data.model.Exercise
 import com.example.guia_pocket_app.databinding.ActivityCadastroExerciseBinding
 import kotlinx.coroutines.launch
+import java.io.File
+import java.io.FileOutputStream
 
 class CadastroExerciseActivity : AppCompatActivity() {
 
@@ -36,7 +38,6 @@ class CadastroExerciseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, true)
-
         binding = ActivityCadastroExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -45,7 +46,6 @@ class CadastroExerciseActivity : AppCompatActivity() {
         supportActionBar?.title = getString(R.string.add_exercise)
 
         muscleKey = intent.getStringExtra("muscle_key") ?: "chest"
-
         database = AppDatabase.getInstance(this)
 
         setupUI()
@@ -132,34 +132,70 @@ class CadastroExerciseActivity : AppCompatActivity() {
             return
         }
 
-        val exercise = Exercise.create(
-            name = name,
-            description = description,
-            muscles = listOf(getMuscleNameByKey(muscleKey)),
-            difficulty = difficulty,
-            equipment = equipment,
-            youtubeSearchTerm = youtubeSearchTerm,
-            imageUri = selectedImageUri?.toString() ?: "",
-            muscleKey = muscleKey
-        )
-
         lifecycleScope.launch {
             try {
+                // Copiar imagem para armazenamento interno se foi selecionada
+                val imagePath = if (selectedImageUri != null) {
+                    copyImageToInternalStorage(selectedImageUri!!)
+                } else {
+                    ""
+                }
+
+                val exercise = Exercise.create(
+                    name = name,
+                    description = description,
+                    muscles = listOf(getMuscleNameByKey(muscleKey)),
+                    difficulty = difficulty,
+                    equipment = equipment,
+                    youtubeSearchTerm = youtubeSearchTerm,
+                    imageUri = imagePath,
+                    muscleKey = muscleKey
+                )
+
                 database.exerciseDao().insertExercise(exercise)
+
                 Toast.makeText(
                     this@CadastroExerciseActivity,
                     R.string.exercise_saved_success,
                     Toast.LENGTH_SHORT
                 ).show()
+
                 setResult(Activity.RESULT_OK)
                 finish()
+
             } catch (e: Exception) {
+                e.printStackTrace()
                 Toast.makeText(
                     this@CadastroExerciseActivity,
                     "${getString(R.string.error_save_exercise)}: ${e.message}",
                     Toast.LENGTH_SHORT
                 ).show()
             }
+        }
+    }
+
+    /**
+     * Copia a imagem do Photo Picker para armazenamento interno da aplicação
+     * Retorna o caminho do arquivo copiado
+     */
+    private fun copyImageToInternalStorage(imageUri: Uri): String {
+        return try {
+            val inputStream = contentResolver.openInputStream(imageUri)
+            if (inputStream != null) {
+                val fileName = "exercise_${System.currentTimeMillis()}.jpg"
+                val file = File(filesDir, fileName)
+
+                FileOutputStream(file).use { outputStream ->
+                    inputStream.copyTo(outputStream)
+                }
+
+                file.absolutePath
+            } else {
+                ""
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            ""
         }
     }
 

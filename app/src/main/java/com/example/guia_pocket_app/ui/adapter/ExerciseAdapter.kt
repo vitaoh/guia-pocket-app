@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.guia_pocket_app.data.model.Exercise
 import com.example.guia_pocket_app.databinding.ItemExerciseBinding
+import java.io.File
 
 class ExerciseAdapter(
     private val exercises: List<Exercise>,
@@ -20,6 +21,7 @@ class ExerciseAdapter(
             parent,
             false
         )
+
         return ExerciseViewHolder(binding, onItemClick, onEditClick, onDeleteClick)
     }
 
@@ -44,9 +46,17 @@ class ExerciseAdapter(
 
                 if (exercise.imageUri.isNotEmpty()) {
                     try {
-                        ivExercise.setImageURI(Uri.parse(exercise.imageUri))
+                        // Verifica se é um arquivo local
+                        val file = File(exercise.imageUri)
+                        if (file.exists()) {
+                            ivExercise.setImageURI(Uri.fromFile(file))
+                        } else {
+                            // Se não for um arquivo local, tenta parse como URI
+                            ivExercise.setImageURI(Uri.parse(exercise.imageUri))
+                        }
                     } catch (e: Exception) {
-                        // Se não conseguir carregar, deixar vazio
+                        e.printStackTrace()
+                        // Se falhar, deixa a imagem padrão
                     }
                 }
 
