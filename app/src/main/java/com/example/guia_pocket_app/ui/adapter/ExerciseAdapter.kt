@@ -38,7 +38,6 @@ class ExerciseAdapter(
                 tvExerciseDifficulty.text = exercise.difficulty
                 tvExerciseEquipment.text = exercise.equipment
 
-                // Carregar imagem se houver
                 if (exercise.imageUri.isNotEmpty()) {
                     try {
                         ivExercise.setImageURI(Uri.parse(exercise.imageUri))
@@ -47,7 +46,6 @@ class ExerciseAdapter(
                     }
                 }
 
-                // Click listener
                 root.setOnClickListener {
                     onItemClick(exercise)
                 }

@@ -32,7 +32,7 @@ interface ExerciseDao {
     @Query("SELECT * FROM exercises ORDER BY name ASC")
     fun getAllExercises(): Flow<List<Exercise>>
 
-    // Buscar exercícios por nome (busca)
+    // Buscar exercícios por nome
     @Query("SELECT * FROM exercises WHERE muscleKey = :muscleKey AND name LIKE '%' || :searchTerm || '%' ORDER BY name ASC")
     fun searchExercisesByName(muscleKey: String, searchTerm: String): Flow<List<Exercise>>
 

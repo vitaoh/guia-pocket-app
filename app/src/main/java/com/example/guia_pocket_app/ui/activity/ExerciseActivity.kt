@@ -26,7 +26,6 @@ class ExerciseActivity : AppCompatActivity() {
     private lateinit var muscleKey: String
     private lateinit var adapter: ExerciseAdapter
 
-    // StateFlow para gerenciar o termo de busca
     private val searchQuery = MutableStateFlow("")
 
     private val cadastroLauncher = registerForActivityResult(
@@ -88,7 +87,7 @@ class ExerciseActivity : AppCompatActivity() {
     private fun observeExercises() {
         lifecycleScope.launch {
             searchQuery
-                .debounce(300) // Aguarda 300ms após última digitação
+                .debounce(300)
                 .flatMapLatest { query ->
                     if (query.isEmpty()) {
                         database.exerciseDao().getExercisesByMuscleName(muscleKey)

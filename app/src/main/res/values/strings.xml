@@ -15,274 +15,6 @@
     <string name="muscle_calves">Calves</string>
     <string name="muscle_traps">Traps</string>
 
-    <string-array name="exercises_chest">
-        <item>Flat bench press</item>
-        <item>Incline bench press</item>
-        <item>Decline bench press</item>
-        <item>Dumbbell fly</item>
-        <item>Incline dumbbell fly</item>
-        <item>Cable crossover</item>
-        <item>Push-up</item>
-        <item>Chest dip</item>
-        <item>Dumbbell pullover</item>
-        <item>Dumbbell bench press</item>
-        <item>Pec deck</item>
-    </string-array>
-
-    <string-array name="exercises_back">
-        <item>Pull-up</item>
-        <item>Chin-up</item>
-        <item>Bent-over row</item>
-        <item>T-bar row</item>
-        <item>One-arm dumbbell row</item>
-        <item>Lat pulldown</item>
-        <item>Cable row</item>
-        <item>Upright row</item>
-        <item>Deadlift</item>
-        <item>Seated row</item>
-        <item>Inverted row</item>
-    </string-array>
-
-    <string-array name="exercises_legs">
-        <item>Squat</item>
-        <item>Front squat</item>
-        <item>Leg press</item>
-        <item>Leg extension</item>
-        <item>Leg curl</item>
-        <item>Lunge</item>
-        <item>Bulgarian split squat</item>
-        <item>Stiff-leg deadlift</item>
-        <item>Romanian deadlift</item>
-        <item>Hip adduction</item>
-        <item>Hip abduction</item>
-        <item>Sumo squat</item>
-        <item>Hack squat</item>
-    </string-array>
-
-    <string-array name="exercises_shoulders">
-        <item>Military press</item>
-        <item>Dumbbell shoulder press</item>
-        <item>Lateral raise</item>
-        <item>Front raise</item>
-        <item>Upright row</item>
-        <item>Arnold press</item>
-        <item>Face pull</item>
-        <item>Reverse fly</item>
-        <item>Rear delt fly</item>
-        <item>Seated shoulder press</item>
-    </string-array>
-
-    <string-array name="exercises_arms">
-        <item>Barbell curl</item>
-        <item>Alternating dumbbell curl</item>
-        <item>Hammer curl</item>
-        <item>Preacher curl</item>
-        <item>Concentration curl</item>
-        <item>Triceps pushdown</item>
-        <item>Skull crusher</item>
-        <item>Overhead triceps extension</item>
-        <item>Bench dip</item>
-        <item>Reverse curl</item>
-        <item>Triceps kickback</item>
-        <item>Close-grip bench press</item>
-    </string-array>
-
-    <string-array name="exercises_abs">
-        <item>Plank</item>
-        <item>Crunch</item>
-        <item>Leg raise</item>
-        <item>Side plank</item>
-        <item>Mountain climbers</item>
-        <item>Russian twist</item>
-        <item>V-ups</item>
-        <item>Jackknife sit-up</item>
-    </string-array>
-
-    <string-array name="exercises_calves">
-        <item>Standing calf raise</item>
-        <item>Seated calf raise</item>
-        <item>Leg press calf raise</item>
-        <item>Donkey calf raise</item>
-        <item>Single-leg calf raise</item>
-        <item>Smith machine calf raise</item>
-    </string-array>
-
-    <string-array name="exercises_traps">
-        <item>Barbell shrug</item>
-        <item>Dumbbell shrug</item>
-        <item>Upright row</item>
-        <item>Face pull</item>
-        <item>Single-arm shrug</item>
-    </string-array>
-
-    <string name="exercise_chest_1">Flat bench press</string>
-    <string name="exercise_chest_2">Incline bench press</string>
-    <string name="exercise_chest_3">Decline bench press</string>
-    <string name="exercise_chest_4">Dumbbell fly</string>
-    <string name="exercise_chest_5">Incline dumbbell fly</string>
-    <string name="exercise_chest_6">Cable crossover</string>
-    <string name="exercise_chest_7">Push-up</string>
-    <string name="exercise_chest_8">Chest dip</string>
-    <string name="exercise_chest_9">Dumbbell pullover</string>
-    <string name="exercise_chest_10">Dumbbell bench press</string>
-    <string name="exercise_chest_11">Pec deck</string>
-
-    <string name="exercise_chest_1_desc">Classic compound exercise for building chest, shoulders, and triceps. Performed lying on a flat bench pressing a barbell.</string>
-    <string name="exercise_chest_2_desc">Targets the upper chest with emphasis on clavicular head. Performed on an incline bench at 30-45 degrees.</string>
-    <string name="exercise_chest_3_desc">Focuses on lower chest development. Performed on a decline bench targeting the sternal head of pectoralis major.</string>
-    <string name="exercise_chest_4_desc">Isolation exercise stretching and contracting the chest. Uses dumbbells in an arc motion to maximize pec activation.</string>
-    <string name="exercise_chest_5_desc">Upper chest isolation on incline bench. Emphasizes stretch and contraction of upper pectorals with controlled movement.</string>
-    <string name="exercise_chest_6_desc">Cable exercise for chest isolation. Provides constant tension throughout the movement for optimal muscle engagement.</string>
-    <string name="exercise_chest_7_desc">Bodyweight compound exercise working chest, shoulders, and triceps. Can be modified for difficulty with variations.</string>
-    <string name="exercise_chest_8_desc">Advanced bodyweight exercise emphasizing lower chest and triceps. Requires parallel bars or dip station.</string>
-    <string name="exercise_chest_9_desc">Hybrid movement working chest and lats. Performed with dumbbell across bench, stretching chest and expanding rib cage.</string>
-    <string name="exercise_chest_10_desc">Dumbbell variation of bench press allowing greater range of motion. Requires more stabilization than barbell version.</string>
-    <string name="exercise_chest_11_desc">Machine-based isolation exercise. Provides controlled movement for chest contraction with reduced shoulder involvement.</string>
-
-    <string name="exercise_back_1">Pull-up</string>
-    <string name="exercise_back_2">Chin-up</string>
-    <string name="exercise_back_3">Bent-over row</string>
-    <string name="exercise_back_4">T-bar row</string>
-    <string name="exercise_back_5">One-arm dumbbell row</string>
-    <string name="exercise_back_6">Lat pulldown</string>
-    <string name="exercise_back_7">Cable row</string>
-    <string name="exercise_back_8">Upright row</string>
-    <string name="exercise_back_9">Deadlift</string>
-    <string name="exercise_back_10">Seated row</string>
-    <string name="exercise_back_11">Inverted row</string>
-
-    <string name="exercise_back_1_desc">Compound bodyweight exercise for lats, biceps, and rear delts. Performed with pronated grip pulling body to bar.</string>
-    <string name="exercise_back_2_desc">Variation of pull-up with supinated grip. Places more emphasis on biceps while still targeting back muscles.</string>
-    <string name="exercise_back_3_desc">Fundamental rowing movement for back thickness. Performed bent over at hips pulling barbell to lower chest.</string>
-    <string name="exercise_back_4_desc">Rowing variation using T-bar or landmine setup. Targets middle back with supported torso position.</string>
-    <string name="exercise_back_5_desc">Unilateral rowing exercise allowing full range of motion. Performed with one hand on bench for support.</string>
-    <string name="exercise_back_6_desc">Machine-based alternative to pull-ups. Allows control of resistance while targeting lats and upper back.</string>
-    <string name="exercise_back_7_desc">Seated cable rowing for back development. Provides constant tension throughout pulling motion.</string>
-    <string name="exercise_back_8_desc">Standing row pulling weight to chin level. Targets upper back, traps, and shoulders with vertical pull.</string>
-    <string name="exercise_back_9_desc">King of compound exercises working entire posterior chain. Builds back, glutes, and hamstrings with heavy loading.</string>
-    <string name="exercise_back_10_desc">Horizontal rowing on machine. Targets mid-back with stable seated position allowing focus on contraction.</string>
-    <string name="exercise_back_11_desc">Bodyweight rowing exercise under bar or table. Adjustable difficulty by changing body angle.</string>
-
-    <string name="exercise_legs_1">Squat</string>
-    <string name="exercise_legs_2">Front squat</string>
-    <string name="exercise_legs_3">Leg press</string>
-    <string name="exercise_legs_4">Leg extension</string>
-    <string name="exercise_legs_5">Leg curl</string>
-    <string name="exercise_legs_6">Lunge</string>
-    <string name="exercise_legs_7">Bulgarian split squat</string>
-    <string name="exercise_legs_8">Stiff-leg deadlift</string>
-    <string name="exercise_legs_9">Romanian deadlift</string>
-    <string name="exercise_legs_10">Hip adduction</string>
-    <string name="exercise_legs_11">Hip abduction</string>
-    <string name="exercise_legs_12">Sumo squat</string>
-    <string name="exercise_legs_13">Hack squat</string>
-
-    <string name="exercise_legs_1_desc">The king of leg exercises. Compound movement building quads, glutes, and hamstrings with barbell on upper back.</string>
-    <string name="exercise_legs_2_desc">Squat variation with barbell held at front shoulders. Emphasizes quads and requires upright torso position.</string>
-    <string name="exercise_legs_3_desc">Machine-based leg exercise allowing heavy loading. Targets quads and glutes with back support.</string>
-    <string name="exercise_legs_4_desc">Isolation exercise for quadriceps. Performed seated extending legs against resistance.</string>
-    <string name="exercise_legs_5_desc">Isolation for hamstrings. Performed lying or seated curling legs against resistance pad.</string>
-    <string name="exercise_legs_6_desc">Unilateral leg exercise stepping forward. Works quads, glutes, and improves balance and coordination.</string>
-    <string name="exercise_legs_7_desc">Single-leg squat with rear foot elevated. Intense quad and glute workout requiring balance and strength.</string>
-    <string name="exercise_legs_8_desc">Hip-hinge movement targeting hamstrings and glutes. Performed with straight legs maintaining slight knee bend.</string>
-    <string name="exercise_legs_9_desc">Deadlift variation focusing on hamstrings and glutes. Maintains slight knee bend with emphasis on hip hinge.</string>
-    <string name="exercise_legs_10_desc">Machine exercise bringing legs together. Targets inner thigh adductor muscles.</string>
-    <string name="exercise_legs_11_desc">Machine exercise pushing legs apart. Targets outer hip and glute muscles.</string>
-    <string name="exercise_legs_12_desc">Wide-stance squat targeting inner thighs and glutes. Performed with toes pointed outward.</string>
-    <string name="exercise_legs_13_desc">Machine squat with angled platform. Reduces lower back stress while effectively targeting quads.</string>
-
-    <string name="exercise_shoulders_1">Military press</string>
-    <string name="exercise_shoulders_2">Dumbbell shoulder press</string>
-    <string name="exercise_shoulders_3">Lateral raise</string>
-    <string name="exercise_shoulders_4">Front raise</string>
-    <string name="exercise_shoulders_5">Upright row</string>
-    <string name="exercise_shoulders_6">Arnold press</string>
-    <string name="exercise_shoulders_7">Face pull</string>
-    <string name="exercise_shoulders_8">Reverse fly</string>
-    <string name="exercise_shoulders_9">Rear delt fly</string>
-    <string name="exercise_shoulders_10">Seated shoulder press</string>
-
-    <string name="exercise_shoulders_1_desc">Standing overhead press with barbell. Compound movement for building shoulder strength and size.</string>
-    <string name="exercise_shoulders_2_desc">Overhead pressing with dumbbells. Allows natural movement pattern and full range of motion.</string>
-    <string name="exercise_shoulders_3_desc">Isolation exercise for side deltoids. Raising dumbbells to sides for shoulder width development.</string>
-    <string name="exercise_shoulders_4_desc">Targets front deltoids raising weights forward. Complements pressing movements for front delt development.</string>
-    <string name="exercise_shoulders_5_desc">Pulling weight vertically to chin. Works shoulders and traps with narrow grip.</string>
-    <string name="exercise_shoulders_6_desc">Rotating press invented by Arnold Schwarzenegger. Combines press with rotation for complete shoulder activation.</string>
-    <string name="exercise_shoulders_7_desc">Cable exercise pulling to face level. Targets rear delts and upper back improving posture.</string>
-    <string name="exercise_shoulders_8_desc">Bent-over fly targeting rear deltoids. Important for balanced shoulder development and posture.</string>
-    <string name="exercise_shoulders_9_desc">Machine-based rear delt isolation. Provides stable position for focused posterior deltoid work.</string>
-    <string name="exercise_shoulders_10_desc">Seated overhead press on machine. Stable position allowing focus on shoulder contraction.</string>
-
-    <string name="exercise_arms_1">Barbell curl</string>
-    <string name="exercise_arms_2">Alternating dumbbell curl</string>
-    <string name="exercise_arms_3">Hammer curl</string>
-    <string name="exercise_arms_4">Preacher curl</string>
-    <string name="exercise_arms_5">Concentration curl</string>
-    <string name="exercise_arms_6">Triceps pushdown</string>
-    <string name="exercise_arms_7">Skull crusher</string>
-    <string name="exercise_arms_8">Overhead triceps extension</string>
-    <string name="exercise_arms_9">Bench dip</string>
-    <string name="exercise_arms_10">Reverse curl</string>
-    <string name="exercise_arms_11">Triceps kickback</string>
-    <string name="exercise_arms_12">Close-grip bench press</string>
-
-    <string name="exercise_arms_1_desc">Classic bicep exercise with barbell. Standing curl with supinated grip for maximum bicep activation.</string>
-    <string name="exercise_arms_2_desc">Dumbbell curls alternating arms. Allows focus on each bicep independently with natural movement.</string>
-    <string name="exercise_arms_3_desc">Neutral grip dumbbell curl. Targets biceps and brachialis for arm thickness.</string>
-    <string name="exercise_arms_4_desc">Bicep curl on preacher bench. Isolates biceps eliminating momentum with arms supported.</string>
-    <string name="exercise_arms_5_desc">Seated single-arm curl. Maximum isolation and peak contraction for bicep development.</string>
-    <string name="exercise_arms_6_desc">Cable tricep exercise pushing down. Isolates triceps with constant tension throughout movement.</string>
-    <string name="exercise_arms_7_desc">Lying tricep extension lowering weight to forehead. Intense tricep isolation with full stretch.</string>
-    <string name="exercise_arms_8_desc">Overhead tricep extension with dumbbell or cable. Stretches long head of triceps for complete development.</string>
-    <string name="exercise_arms_9_desc">Bodyweight tricep exercise on bench. Scalable difficulty effective for tricep strength and size.</string>
-    <string name="exercise_arms_10_desc">Curl with pronated grip. Targets brachioradialis and forearms along with biceps.</string>
-    <string name="exercise_arms_11_desc">Single-arm tricep exercise leaning forward. Isolation movement for tricep definition.</string>
-    <string name="exercise_arms_12_desc">Bench press with narrow grip. Compound movement emphasizing triceps and inner chest.</string>
-
-    <string name="exercise_abs_1">Plank</string>
-    <string name="exercise_abs_2">Crunch</string>
-    <string name="exercise_abs_3">Leg raise</string>
-    <string name="exercise_abs_4">Side plank</string>
-    <string name="exercise_abs_5">Mountain climbers</string>
-    <string name="exercise_abs_6">Russian twist</string>
-    <string name="exercise_abs_7">V-ups</string>
-    <string name="exercise_abs_8">Jackknife sit-up</string>
-
-    <string name="exercise_abs_1_desc">Isometric core exercise holding body straight. Builds core stability and endurance engaging entire midsection.</string>
-    <string name="exercise_abs_2_desc">Classic ab exercise flexing spine. Targets rectus abdominis with controlled curling motion.</string>
-    <string name="exercise_abs_3_desc">Lower ab exercise raising legs from hanging or lying position. Intense core activation.</string>
-    <string name="exercise_abs_4_desc">Lateral plank targeting obliques. Builds side core strength and stability holding body sideways.</string>
-    <string name="exercise_abs_5_desc">Dynamic exercise alternating knee drives. Combines cardio with core activation.</string>
-    <string name="exercise_abs_6_desc">Rotational ab exercise for obliques. Seated twisting motion with or without weight.</string>
-    <string name="exercise_abs_7_desc">Advanced ab exercise touching hands to feet. Combines upper and lower ab activation in V shape.</string>
-    <string name="exercise_abs_8_desc">Dynamic sit-up bringing knees and torso together. Full ab contraction in folding motion.</string>
-
-    <string name="exercise_calves_1">Standing calf raise</string>
-    <string name="exercise_calves_2">Seated calf raise</string>
-    <string name="exercise_calves_3">Leg press calf raise</string>
-    <string name="exercise_calves_4">Donkey calf raise</string>
-    <string name="exercise_calves_5">Single-leg calf raise</string>
-    <string name="exercise_calves_6">Smith machine calf raise</string>
-
-    <string name="exercise_calves_1_desc">Standing calf exercise on machine. Targets gastrocnemius with full extension and contraction.</string>
-    <string name="exercise_calves_2_desc">Seated calf raise targeting soleus. Performed with knees bent isolating lower calf muscle.</string>
-    <string name="exercise_calves_3_desc">Calf raises performed on leg press. Allows heavy loading for calf development.</string>
-    <string name="exercise_calves_4_desc">Bent-over calf raise with weight on back. Intense stretch and contraction for calves.</string>
-    <string name="exercise_calves_5_desc">Unilateral calf raise. Addresses imbalances and allows full range of motion per leg.</string>
-    <string name="exercise_calves_6_desc">Calf raises on smith machine. Stable barbell path for controlled calf training.</string>
-
-    <string name="exercise_traps_1">Barbell shrug</string>
-    <string name="exercise_traps_2">Dumbbell shrug</string>
-    <string name="exercise_traps_3">Upright row</string>
-    <string name="exercise_traps_4">Face pull</string>
-    <string name="exercise_traps_5">Single-arm shrug</string>
-
-    <string name="exercise_traps_1_desc">Classic trap exercise shrugging shoulders with barbell. Builds upper trap thickness and strength.</string>
-    <string name="exercise_traps_2_desc">Dumbbell variation of shrugs. Allows natural movement path and unilateral focus.</string>
-    <string name="exercise_traps_3_desc">Vertical pull to chin working traps and shoulders. Narrow grip emphasizes upper trap activation.</string>
-    <string name="exercise_traps_4_desc">Cable pull to face level. Works upper back and traps while improving posture.</string>
-    <string name="exercise_traps_5_desc">Unilateral shrug with dumbbell. Addresses trap imbalances and allows concentrated work.</string>
-
     <string name="view_exercises">View exercises</string>
 
     <string name="description">Description</string>
@@ -291,7 +23,6 @@
     <string name="equipment">Equipment</string>
     <string name="watch_tutorial">Watch Tutorial on YouTube</string>
 
-    <!-- Activity Add Exercise -->
     <string name="add_exercise">Add Exercise</string>
     <string name="exercise_name">Exercise Name</string>
     <string name="exercise_description">Description</string>
@@ -302,12 +33,10 @@
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
 
-    <!-- Difficulties -->
     <string name="difficulty_beginner">Beginner</string>
     <string name="difficulty_intermediate">Intermediate</string>
     <string name="difficulty_advanced">Advanced</string>
 
-    <!-- Equipment -->
     <string name="equipment_barbell">Barbell</string>
     <string name="equipment_dumbbell">Dumbbell</string>
     <string name="equipment_machine">Machine</string>
@@ -315,18 +44,15 @@
     <string name="equipment_resistance_band">Resistance Band</string>
     <string name="equipment_bodyweight">Bodyweight</string>
 
-    <!-- Validation Messages -->
     <string name="error_empty_name">Please enter the exercise name</string>
     <string name="error_empty_description">Please enter the exercise description</string>
     <string name="error_empty_youtube">Please enter a YouTube search term</string>
     <string name="exercise_saved_success">Exercise saved successfully!</string>
     <string name="error_save_exercise">Error saving exercise</string>
 
-    <!-- ExerciseActivity -->
     <string name="search_exercises">Search exercise...</string>
     <string name="add_new_exercise">New Exercise</string>
 
-    <!-- Others -->
     <string name="loading">Loading...</string>
     <string name="no_exercises">No exercises found</string>
     <string name="retry">Try Again</string>

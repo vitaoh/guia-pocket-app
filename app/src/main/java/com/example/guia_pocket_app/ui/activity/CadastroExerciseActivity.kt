@@ -23,7 +23,6 @@ class CadastroExerciseActivity : AppCompatActivity() {
     private var selectedImageUri: Uri? = null
     private lateinit var muscleKey: String
 
-    // ActivityResultLauncher para selecionar imagem da galeria
     private val pickImageLauncher = registerForActivityResult(
         ActivityResultContracts.GetContent()
     ) { uri: Uri? ->
@@ -41,36 +40,29 @@ class CadastroExerciseActivity : AppCompatActivity() {
         binding = ActivityCadastroExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Inicializar toolbar
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.title = getString(R.string.add_exercise)
 
-        // Obter o muscleKey da Intent
         muscleKey = intent.getStringExtra("muscle_key") ?: "chest"
 
-        // Inicializar Database
         database = AppDatabase.getInstance(this)
 
         setupUI()
     }
 
     private fun setupUI() {
-        // Setup dos Spinners
         setupDifficultySpinner()
         setupEquipmentSpinner()
 
-        // Botão para selecionar imagem
         binding.btnSelectImage.setOnClickListener {
             pickImageLauncher.launch("image/*")
         }
 
-        // Botão para salvar exercício
         binding.btnSaveExercise.setOnClickListener {
             saveExercise()
         }
 
-        // Botão para cancelar
         binding.btnCancel.setOnClickListener {
             setResult(Activity.RESULT_CANCELED)
             finish()
@@ -141,7 +133,6 @@ class CadastroExerciseActivity : AppCompatActivity() {
             return
         }
 
-        // Criar Exercise
         val exercise = Exercise.create(
             name = name,
             description = description,
@@ -153,7 +144,6 @@ class CadastroExerciseActivity : AppCompatActivity() {
             muscleKey = muscleKey
         )
 
-        // Salvar no banco de dados
         lifecycleScope.launch {
             try {
                 database.exerciseDao().insertExercise(exercise)
