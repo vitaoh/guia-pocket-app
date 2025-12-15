@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.example.guia_pocket_app"
-    compileSdk = 34  // Android 14 (última versão estável)
+    compileSdk = 36  // Android 14 (última versão estável)
 
     defaultConfig {
         applicationId = "com.example.guia_pocket_app"
-        minSdk = 24    // Android 7.0 (cobre 98% dos dispositivos)
-        targetSdk = 34
+        minSdk = 33    // Android 7.0 (cobre 98% dos dispositivos)
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
