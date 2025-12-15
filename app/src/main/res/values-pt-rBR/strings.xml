@@ -57,4 +57,14 @@
     <string name="no_exercises">Nenhum exercício encontrado</string>
     <string name="retry">Tentar Novamente</string>
 
+    <string name="edit">Editar</string>
+    <string name="delete">Excluir</string>
+    <string name="edit_exercise">Editar Exercício</string>
+    <string name="confirm_delete">Confirmar Exclusão</string>
+    <string name="delete_exercise_message">Tem certeza que deseja excluir o exercício "%s"?</string>
+    <string name="exercise_deleted_success">Exercício excluído com sucesso!</string>
+    <string name="error_delete_exercise">Erro ao excluir exercício</string>
+    <string name="exercise_updated_success">Exercício atualizado com sucesso!</string>
+    <string name="error_update_exercise">Erro ao atualizar exercício</string>
+
 </resources>

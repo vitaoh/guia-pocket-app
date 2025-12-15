@@ -24,7 +24,7 @@ interface ExerciseDao {
     @Query("SELECT * FROM exercises WHERE muscleKey = :muscleKey ORDER BY name ASC")
     fun getExercisesByMuscleName(muscleKey: String): Flow<List<Exercise>>
 
-    // Buscar exercício por ID
+    // Buscar exercício por ID - IMPORTANTE: garantir que retorna null se não encontrar
     @Query("SELECT * FROM exercises WHERE id = :id")
     suspend fun getExerciseById(id: Int): Exercise?
 

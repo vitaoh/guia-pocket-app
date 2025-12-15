@@ -57,4 +57,14 @@
     <string name="no_exercises">No exercises found</string>
     <string name="retry">Try Again</string>
 
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="edit_exercise">Edit Exercise</string>
+    <string name="confirm_delete">Confirm Deletion</string>
+    <string name="delete_exercise_message">Are you sure you want to delete the exercise "%s"?</string>
+    <string name="exercise_deleted_success">Exercise deleted successfully!</string>
+    <string name="error_delete_exercise">Error deleting exercise</string>
+    <string name="exercise_updated_success">Exercise updated successfully!</string>
+    <string name="error_update_exercise">Error updating exercise</string>
+
 </resources>

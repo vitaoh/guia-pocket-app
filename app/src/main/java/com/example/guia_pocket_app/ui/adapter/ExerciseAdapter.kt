@@ -9,7 +9,9 @@ import com.example.guia_pocket_app.databinding.ItemExerciseBinding
 
 class ExerciseAdapter(
     private val exercises: List<Exercise>,
-    private val onItemClick: (Exercise) -> Unit
+    private val onItemClick: (Exercise) -> Unit,
+    private val onEditClick: (Exercise) -> Unit,
+    private val onDeleteClick: (Exercise) -> Unit
 ) : RecyclerView.Adapter<ExerciseAdapter.ExerciseViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExerciseViewHolder {
@@ -18,7 +20,7 @@ class ExerciseAdapter(
             parent,
             false
         )
-        return ExerciseViewHolder(binding, onItemClick)
+        return ExerciseViewHolder(binding, onItemClick, onEditClick, onDeleteClick)
     }
 
     override fun onBindViewHolder(holder: ExerciseViewHolder, position: Int) {
@@ -29,7 +31,9 @@ class ExerciseAdapter(
 
     class ExerciseViewHolder(
         private val binding: ItemExerciseBinding,
-        private val onItemClick: (Exercise) -> Unit
+        private val onItemClick: (Exercise) -> Unit,
+        private val onEditClick: (Exercise) -> Unit,
+        private val onDeleteClick: (Exercise) -> Unit
     ) : RecyclerView.ViewHolder(binding.root) {
 
         fun bind(exercise: Exercise) {
@@ -46,8 +50,19 @@ class ExerciseAdapter(
                     }
                 }
 
+                // Clique no card: abre detalhes
                 root.setOnClickListener {
                     onItemClick(exercise)
+                }
+
+                // Botão Editar
+                btnEdit.setOnClickListener {
+                    onEditClick(exercise)
+                }
+
+                // Botão Excluir
+                btnDelete.setOnClickListener {
+                    onDeleteClick(exercise)
                 }
             }
         }

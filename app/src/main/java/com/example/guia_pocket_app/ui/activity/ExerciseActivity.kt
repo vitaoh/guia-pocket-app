@@ -1,7 +1,9 @@
 package com.example.guia_pocket_app.ui.activity
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -58,11 +60,21 @@ class ExerciseActivity : AppCompatActivity() {
     }
 
     private fun setupRecyclerView() {
-        adapter = ExerciseAdapter(emptyList()) { exercise ->
-            val intent = Intent(this, ExerciseDetailActivity::class.java)
-            intent.putExtra("exercise", exercise)
-            startActivity(intent)
-        }
+        adapter = ExerciseAdapter(emptyList(),
+            onItemClick = { exercise ->
+                val intent = Intent(this, ExerciseDetailActivity::class.java)
+                intent.putExtra("exercise", exercise)
+                startActivity(intent)
+            },
+            onEditClick = { exercise ->
+                val intent = Intent(this, EditExerciseActivity::class.java)
+                intent.putExtra("exercise", exercise)
+                startActivity(intent)
+            },
+            onDeleteClick = { exercise ->
+                showDeleteDialog(exercise)
+            }
+        )
 
         binding.exerciseRecyclerView.apply {
             layoutManager = LinearLayoutManager(this@ExerciseActivity)
@@ -106,12 +118,54 @@ class ExerciseActivity : AppCompatActivity() {
     }
 
     private fun updateAdapter(exercises: List<Exercise>) {
-        adapter = ExerciseAdapter(exercises) { exercise ->
-            val intent = Intent(this, ExerciseDetailActivity::class.java)
-            intent.putExtra("exercise", exercise)
-            startActivity(intent)
-        }
+        adapter = ExerciseAdapter(exercises,
+            onItemClick = { exercise ->
+                val intent = Intent(this, ExerciseDetailActivity::class.java)
+                intent.putExtra("exercise", exercise)
+                startActivity(intent)
+            },
+            onEditClick = { exercise ->
+                try {
+                    val intent = Intent(this, EditExerciseActivity::class.java)
+                    intent.putExtra("exercise_id", exercise.id)
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                    Toast.makeText(this, "Erro ao abrir edição", Toast.LENGTH_SHORT).show()
+                }
+            },
+            onDeleteClick = { exercise ->
+                // Mostrar diálogo de confirmação para excluir
+                showDeleteDialog(exercise)
+            }
+        )
         binding.exerciseRecyclerView.adapter = adapter
+    }
+
+    private fun showDeleteDialog(exercise: Exercise) {
+        AlertDialog.Builder(this)
+            .setTitle(getString(R.string.confirm_delete))
+            .setMessage(getString(R.string.delete_exercise_message, exercise.name))
+            .setPositiveButton(R.string.delete) { _, _ ->
+                lifecycleScope.launch {
+                    try {
+                        database.exerciseDao().deleteExercise(exercise)
+                        Toast.makeText(
+                            this@ExerciseActivity,
+                            R.string.exercise_deleted_success,
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    } catch (e: Exception) {
+                        Toast.makeText(
+                            this@ExerciseActivity,
+                            R.string.error_delete_exercise,
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+            }
+            .setNegativeButton(R.string.cancel, null)
+            .show()
     }
 
     private fun getMuscleNameByKey(key: String): String {
