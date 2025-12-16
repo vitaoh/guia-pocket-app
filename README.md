@@ -35,9 +35,20 @@ O **Pocket Guide** é um guia de bolso para praticantes de musculação que dese
 
 ## 🎥 Demonstração em Vídeo  
 
-<div align="center">
-  <img src="assets/video.gif" width="300" alt="Guia Pocket App">
-</div>
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <h3>📱 Versão 1</h3>
+      <img src="assets/video.gif" width="280" alt="Guia Pocket App Versão 1" />
+      <p><em>Versão inicial com melhorias</em></p>
+    </td>
+    <td align="center" width="50%">
+      <h3>📱 Versão 2</h3>
+      <img src="assets/versao-2-app.gif" width="280" alt="Guia Pocket App Versão 2" />
+      <p><em>Versão com DAO de exercicios</em></p>
+    </td>
+  </tr>
+</table>
 
 <!-- [![Assista ao vídeo de demonstração do app](https://img.shields.io/badge/▶️%20Assistir%20ao%20vídeo-blue?style=for-the-badge)](https://drive.google.com/file/d/1eKzqiugHjrjhbp5X_SiaDdZibj78YzOf/view?usp=sharing) -->
 
